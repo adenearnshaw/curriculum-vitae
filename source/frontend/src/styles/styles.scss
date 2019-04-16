@@ -1,3 +1,48 @@
 @import "./reset";
 @import "./bootstrap";
 
+$wild-sand: #f5f5f5;
+$mine-shaft: #212121;
+
+body {
+    background-color: $wild-sand;
+    color: $mine-shaft;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 47px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 34px;
+    line-height: 68px;
+    margin-top: 26px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.title-date {
+    display: inline-block;
+    font-weight: 700;
+
+    width: 300px;
+}
+
+.title-name {
+    display: inline-block;
+    font-style: italic;
+}

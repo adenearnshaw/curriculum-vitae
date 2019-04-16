@@ -1,0 +1,21 @@
+<h2>Employment</h2>
+
+<div *ngFor="let item of employmentItems" class="employment-section">
+    <div class="employment-title">
+        <div class="title-date">{{item.date}}</div>
+        <div class="title-name">
+            <span>{{item.employer}}</span>
+            <span>&nbsp;-&nbsp;</span>
+            <span>{{item.position}}</span>
+        </div>
+    </div>
+    <div class="employment-blurb">
+        <p>{{item.blurb}}</p>
+    </div>
+
+    <div class="employment-skills">
+        <div *ngFor="let skill of item.skills">
+            {{skill}}
+        </div>
+    </div>
+</div>
