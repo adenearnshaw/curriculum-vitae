@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="230" height="50" viewBox="0 0 230 50">
+  <g id="header_cv" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1" font-family="VulfMono-LightItalic, Vulf Mono" font-size="30" font-style="italic" font-weight="300" letter-spacing="1.06">
+    <g id="Group" fill="#151515" transform="translate(-1 -10)">
+      <text id="Curriculum">
+        <tspan x=".403" y="32">Curriculum</tspan>
+      </text>
+      <text id="Vitae">
+        <tspan x="115.701" y="59">Vitae</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
