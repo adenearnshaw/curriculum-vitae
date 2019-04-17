@@ -7,25 +7,25 @@ $mine-shaft: #212121;
 body {
     background-color: $wild-sand;
     color: $mine-shaft;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1rem;
+    line-height: 1.4;
     font-family: sans-serif;
 }
 
 h1 {
-    font-size: 47px;
-    line-height: 1;
+    font-size: 2rem;
+    line-height: 1.2;
 }
 
 h2 {
-    font-size: 34px;
-    line-height: 68px;
+    font-size: 1.4rem;
+    line-height: 1.2;
     margin-top: 26px;
     margin-bottom: 10px;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 1.2rem;
     line-height: 36px;
     margin-top: 20px;
     margin-bottom: 0px;
@@ -35,9 +35,27 @@ p {
     margin-bottom: 10px;
 }
 
+a {
+    color: $mine-shaft;
+    text-decoration: none;
+
+    &:active, &:focus, &:visited {
+        color: inherit;
+    }
+
+    &:hover {
+        color: lighten($mine-shaft, 30%);
+    }
+
+    &:focus {
+        text-decoration: underline;
+        outline: none;
+    }
+}
+
 .title-date {
     display: inline-block;
-    font-weight: 700;
+    font-weight: 600;
 
     width: 300px;
 }
