@@ -43,11 +43,12 @@
             "polyfills": "src/polyfills.ts",
             "stylePreprocessorOptions": {
               "includePaths": [
-                "styles"
+                "src/styles"
               ]
             },
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
+              "src/favicon.png",
               "src/favicon.ico",
               "src/assets"
             ],

@@ -1,15 +1,13 @@
-@import "./reset";
-@import "./bootstrap";
-
-$wild-sand: #f5f5f5;
-$mine-shaft: #212121;
+@import 'reset';
+@import 'bootstrap';
+@import 'colors';
 
 body {
     background-color: $wild-sand;
     color: $mine-shaft;
     font-size: 1rem;
     line-height: 1.4;
-    font-family: sans-serif;
+    font-family: "Helvetica Neue", Helvetica, "Segoe UI", "Roboto", Arial, sans-serif;
 }
 
 h1 {
@@ -20,8 +18,9 @@ h1 {
 h2 {
     font-size: 1.4rem;
     line-height: 1.2;
-    margin-top: 26px;
-    margin-bottom: 10px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -39,7 +38,9 @@ a {
     color: $mine-shaft;
     text-decoration: none;
 
-    &:active, &:focus, &:visited {
+    &:active,
+    &:focus,
+    &:visited {
         color: inherit;
     }
 
@@ -53,14 +54,18 @@ a {
     }
 }
 
-.title-date {
-    display: inline-block;
-    font-weight: 600;
+.section-title {
+    margin-bottom: 10px;
 
-    width: 300px;
-}
+    .title-date {
+        display: inline-block;
+        font-weight: 600;
 
-.title-name {
-    display: inline-block;
-    font-style: italic;
+        width: 300px;
+    }
+
+    .title-name {
+        display: inline-block;
+        font-style: italic;
+    }
 }
