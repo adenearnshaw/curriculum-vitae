@@ -6,8 +6,8 @@ body {
     background-color: $wild-sand;
     color: $mine-shaft;
     font-size: 1rem;
-    line-height: 1.4;
-    font-family: "Helvetica Neue", Helvetica, "Segoe UI", "Roboto", Arial, sans-serif;
+    line-height: 1.8;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 
 h1 {
@@ -54,8 +54,12 @@ a {
     }
 }
 
+section {
+    margin-bottom: 30px;
+}
+
 .section-title {
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 
     .title-date {
         display: inline-block;
