@@ -1,4 +1,4 @@
-export class EmploymentItem {
+export interface IEmploymentItem {
     id: string;
     date: string;
     employer: string;
