@@ -6,4 +6,5 @@ export interface IEmploymentItem {
     overview: string;
     details: string;
     skills: string[];
+    portfolio_items?: string[];
 }
