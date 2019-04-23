@@ -18,7 +18,7 @@ h1 {
 h2 {
     font-size: 1.4rem;
     line-height: 1.2;
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 0px;
     margin-bottom: 20px;
 }
@@ -65,11 +65,41 @@ section {
         display: inline-block;
         font-weight: 600;
 
-        width: 300px;
+        @include media-breakpoint-up (sm) {
+            width: 240px;
+        }
+
+        @include media-breakpoint-up (lg) {
+            width: 300px;
+        }
     }
 
     .title-name {
         display: inline-block;
         font-style: italic;
+
+        @include media-breakpoint-up (sm) {
+            text-align: right;
+        }
+
+        @include media-breakpoint-up (lg) {
+            text-align: left;
+        }
+    }
+}
+
+.skill {
+    font-size: 11px;
+    color: lighten($wild-sand, 10%);
+    background-color: lighten($mine-shaft, 10%);
+    display: inline-block;
+    margin: 0 6px 6px 0;
+    border-radius: 2px;
+    padding: 3px 6px;
+
+    @include media-breakpoint-up (sm) {
+        font-size: 12px;
+        margin: 0 10px 10px 0;
+        padding: 5px 10px;
     }
 }

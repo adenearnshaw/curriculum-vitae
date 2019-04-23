@@ -10,20 +10,8 @@ html {
 }
 
 // Any dependency mixins/utilities...
-@import "../../node_modules/bootstrap/scss/mixins/deprecate";
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
+@import "./media";
 
-$grid-breakpoints: (
-    xxs: 0,
-    xs: 360px,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px
-);
-
-@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
 @import "../../node_modules/bootstrap/scss/mixins/hover";
 @import "../../node_modules/bootstrap/scss/mixins/table-row";
 @import "../../node_modules/bootstrap/scss/mixins/grid-framework";

@@ -1,12 +1,22 @@
 <header>
   <h1 class="container">
-    <div class="row">
+    <div class="row d-none d-sm-flex">
       <div class="col-auto mr-auto">
-        <img src="/assets/header_name.svg" alt="Aden Earnshaw">
+        <img src="/assets/header_name.svg" alt="Aden Earnshaw" class="name-image">
       </div>
       <div class="col-auto">
-        <img src="/assets/header_cv.svg" alt="Curriculum Vitae">
+        <img src="/assets/header_cv.svg" alt="Curriculum Vitae" class="cv-image">
       </div>
     </div>
+
+    <div class="row d-flex d-sm-none mobile-view">
+        <div class="col-12">
+          <img src="/assets/header_name_mobile.svg" alt="Aden Earnshaw" class="name-image">
+        </div>
+        <div class="w-100"></div>
+        <div class="col-12">
+          <img src="/assets/header_cv_mobile.svg" alt="Curriculum Vitae" class="cv-image">
+        </div>
+      </div>
   </h1>
 </header>

@@ -10,6 +10,8 @@ import { EmploymentHistoryComponent } from './employment-history/employment-hist
 import { HeaderComponent } from './header/header.component';
 import { PersonalDetailsComponent } from './personal-details/personal-details.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { EducationHistoryComponent } from './education-history/education-history.component';
+import { AdditionalSkillsComponent } from './additional-skills/additional-skills.component';
 
 @NgModule({
     imports: [
@@ -23,7 +25,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
         PersonalDetailsComponent,
         CareerObjectivesComponent,
         EmploymentHistoryComponent,
-        PortfolioComponent
+        PortfolioComponent,
+        EducationHistoryComponent,
+        AdditionalSkillsComponent
     ],
     providers: [],
     bootstrap: [AppComponent]

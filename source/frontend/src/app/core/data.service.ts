@@ -62,8 +62,8 @@ export class DataService {
                 date: 'Jul 2013 - Jun 2015',
                 employer: 'Verco Advisory Services Ltd',
                 position: 'Junior Developer',
-                overview: '', 
-                details: '',
+                overview: 'Worked on a number of bespoke ASP MVC 5 projects working in both small and medium teams to deliver the software.', // tslint:disable-line
+                details: 'Worked on a number of bespoke ASP MVC 5 projects working in both small and medium teams to deliver the software. As an advocate of Modern Design principles, I’m was frequently tasked with designing assets and providing UX guidance to the rest of the team, as well as ensuring that layouts were device friendly. Working with the full stack, building entire slices of functionality from SQL, to JavaScript, refactoring legacy code where appropriate, or building brand new functionality into the product.', // tslint:disable-line
                 skills: [
                     'Windows Phone 7/8 Silverlight',
                     'ASP.NET MVC5',
@@ -77,8 +77,8 @@ export class DataService {
                 date: 'Jan 2012 - Jul 2013',
                 employer: 'Carphone Warehouse PLC',
                 position: 'Customer Service Representative',
-                overview: '',
-                details: '',
+                overview: 'Provided support to customers on a wide range of queries. Part of the role also required providing support to the Retail Divisions when required. Alongside this I trained & coached staff, providing support for the management team.', // tslint:disable-line
+                details: 'Provided support to customers on a wide range of queries. Part of the role also required providing support to the Retail Divisions when required. Alongside this I trained & coached staff, providing support for the management team.', // tslint:disable-line
                 skills: [
                     'Peer-to-peer training'
                 ]
@@ -88,8 +88,8 @@ export class DataService {
                 date: 'Nov 2010 - Jan 2012',
                 employer: 'Best Buy UK',
                 position: 'Customer Service Advisor',
-                overview: '',
-                details: '',
+                overview: 'As a customer service agent, I was required to provide accurate, up-to-date advice and help on the full range of products, to ensure customer satisfaction. During my time I had to additional duties including Process development, supervision of staff, and building a number of WPF programs to assist all contact centre advisors, including everyday utilities and training development tools.', // tslint:disable-line
+                details: 'As a customer service agent, I was required to provide accurate, up-to-date advice and help on the full range of products, to ensure customer satisfaction. During my time I had to additional duties including Process development, supervision of staff, and building a number of WPF programs to assist all contact centre advisors, including everyday utilities and training development tools.', // tslint:disable-line
                 skills: []
             },
             {
@@ -97,8 +97,8 @@ export class DataService {
                 date: 'Jun 2003 - Nov 2010',
                 employer: 'Wm Morrisons PLC',
                 position: 'Customer Cafe Manager',
-                overview: '', 
-                details: '',
+                overview: 'Responsibilities included: Arranging rotas for 20 staff, updating purchasing accounts, recording and ordering stock and expenses, ensuring staff had the guidance they need to develop, carrying out annual appraisals and weekly training updates.', // tslint:disable-line
+                details: 'Initially working part-time to bolster my income while a student, I demonstrated my ability to lead and was promoted from Supervisor while still at university and was promoted further to Manger post-graduation.\r\n\r\nI had to ensure that the Café ran smoothly at all times and that all legal requirements were adhered to. Responsibilities included: Arranging rotas for 20 staff, updating purchasing accounts, recording and ordering stock and expenses, ensuring staff had the guidance they need to develop, carrying out annual appraisals and weekly training updates.', // tslint:disable-line
                 skills: [
                     'leadership skills'
                 ]
@@ -108,7 +108,7 @@ export class DataService {
                 date: 'Jun 2002 - Nov 2002',
                 employer: 'Multimedia Shop',
                 position: 'Computer Technician',
-                overview: '', 
+                overview: 'I worked in a computer repair and supply shop, building bespoke PCs for customers of varying technical ability and providing support and training to those who needed it.', // tslint:disable-line 
                 details: '',
                 skills: []
             },
@@ -117,7 +117,7 @@ export class DataService {
                 date: 'Nov 2001',
                 employer: 'British Telecoms',
                 position: 'System Programming Assistant',
-                overview: '',
+                overview: 'Work experience placement. Helped in facilitating the location and correction of errors in the BT Broadband help desk software using Delphi.', // tslint:disable-line
                 details: '',
                 skills: [ ]
             }
