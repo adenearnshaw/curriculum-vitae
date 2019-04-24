@@ -5,6 +5,7 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         height: 29.7cm;
+        overflow: hidden;
 
 
         .row {
@@ -22,6 +23,7 @@
         font-size: 14px;
         line-height: 1.1;
         margin-bottom: 5px;
+        color: $mine-shaft;
     }
 
     section {

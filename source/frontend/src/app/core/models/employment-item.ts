@@ -7,4 +7,5 @@ export interface IEmploymentItem {
     details: string;
     skills: string[];
     portfolio_items?: string[];
+    isOmittedInPrint?: boolean;
 }
