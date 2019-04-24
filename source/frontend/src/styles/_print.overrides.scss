@@ -1,0 +1,28 @@
+@media print and (max-width: 21cm) {
+    .print-columns {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 29.7cm;
+
+        .row {
+            width: 45%;
+            text-align: justify;
+        }
+    }
+
+    body {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+
+    h2 {
+        font-size: 14px;
+        line-height: 1.1;
+        margin-bottom: 5px;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+}

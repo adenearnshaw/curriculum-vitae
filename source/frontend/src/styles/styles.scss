@@ -55,7 +55,7 @@ a {
 }
 
 section {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .section-title {
@@ -103,3 +103,6 @@ section {
         padding: 5px 10px;
     }
 }
+
+
+@import "print.overrides";
