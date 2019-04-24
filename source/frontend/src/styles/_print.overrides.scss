@@ -2,11 +2,13 @@
     .print-columns {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         justify-content: flex-start;
         height: 29.7cm;
 
+
         .row {
-            width: 45%;
+            width: 50%;
             text-align: justify;
         }
     }
@@ -24,5 +26,11 @@
 
     section {
         margin-bottom: 20px;
+    }
+
+    .skill {
+        font-size: 9px;
+        padding: 3px 5px;
+        margin: 0 4px 4px 0;
     }
 }
