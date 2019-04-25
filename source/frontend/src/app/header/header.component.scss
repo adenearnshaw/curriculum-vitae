@@ -1,4 +1,5 @@
 @import 'media';
+@import "print.overrides";
 
 header {
     img {
@@ -24,4 +25,7 @@ header {
             }
         }
     }
+
+    @include header-print-overrides();
 }
+

@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'bootstrap';
 @import 'colors';
+@import "print.overrides";
 
 body {
     background-color: $wild-sand;
@@ -55,6 +56,10 @@ a {
     }
 }
 
+strong {
+    font-weight: 700;
+}
+
 section {
     margin-bottom: 50px;
 }
@@ -105,5 +110,4 @@ section {
     }
 }
 
-
-@import "print.overrides";
+@include main-print-overrides();

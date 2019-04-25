@@ -1,5 +1,8 @@
 @import "colors";
+@import "print.overrides";
 
 .employment-section {
     margin-bottom: 40px;
 }
+
+@include employment-history-print-overrides();
