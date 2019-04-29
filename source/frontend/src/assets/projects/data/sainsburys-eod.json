@@ -1,0 +1,10 @@
+{
+    "name": "Sainsbury's Entertainment On Demand Video & eBooks App",
+    "icon": "/assets/projects/images/eod_logo.png",
+    "banner": "/assets/projects/images/eod_banner.png",
+    "technologies": [
+        "Windows UAP for Win 8.1",
+        "Windows Phone 8.0"
+    ],
+    "description": ""
+}

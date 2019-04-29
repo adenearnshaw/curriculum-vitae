@@ -1,0 +1,10 @@
+{
+    "name": "Citizen App by Democracy Counts",
+    "icon": "/assets/projects/images/citizenapp_logo.png",
+    "banner": "",
+    "technologies": [
+        "Xamarin Native",
+        "Azure Notification Hubs"
+    ],
+    "description": ""
+}

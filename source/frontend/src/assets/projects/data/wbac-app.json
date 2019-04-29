@@ -1,0 +1,13 @@
+{
+    "name": "WeBuyAnyCar.com",
+    "icon": "/assets/projects/images/wbac_logo.png",
+    "banner": "/assets/projects/images/wbac_banner.png",
+    "technologies": [
+        "Xamarin Forms",
+        "SQLite",
+        "Azure DevOps",
+        "TestFlight",
+        "App Center"
+    ],
+    "description": ""
+}
