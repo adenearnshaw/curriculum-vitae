@@ -12,12 +12,15 @@ import { PersonalDetailsComponent } from './personal-details/personal-details.co
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { EducationHistoryComponent } from './education-history/education-history.component';
 import { AdditionalSkillsComponent } from './additional-skills/additional-skills.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
     imports: [
         BrowserModule,
         AppRoutingModule,
-        CoreModule
+        CoreModule,
+        ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
     ],
     declarations: [
         AppComponent,
