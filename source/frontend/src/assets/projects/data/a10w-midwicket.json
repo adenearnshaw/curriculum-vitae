@@ -1,6 +1,6 @@
 {
     "name": "Midwicket Application",
-    "icon": "/assets/projects/images/midwicket_logo.png",
+    "icon": "/assets/projects/images/midwicket_app.png",
     "banner": "/assets/projects/images/midwicket_banner.png",
     "technologies": [
         "Xamarin Forms",
