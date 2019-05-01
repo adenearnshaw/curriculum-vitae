@@ -4,7 +4,7 @@
   "description": "CV for Aden Earnshaw, a Xamarin Certified developer from NW England",
   "theme_color": "#212121",
   "background_color": "#f5f5f5",
-  "display": "minimal-ui",
+  "display": "browser",
   "scope": "/",
   "start_url": "/",
   "icons": [
