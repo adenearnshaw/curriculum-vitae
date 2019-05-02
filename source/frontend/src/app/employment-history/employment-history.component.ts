@@ -15,6 +15,8 @@ export class EmploymentHistoryComponent implements OnInit {
     public constructor(private readonly _dataService: DataService) { }
 
     public ngOnInit() {
-        this.employmentItems = this._dataService.getEmploymentHistory();
+        this._dataService.employmentHistory.subscribe((data) => {
+            this.employmentItems = data;
+        });
     }
 }

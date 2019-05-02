@@ -22,7 +22,12 @@ gulp.task('update-project-data', (done) => {
         projectData.find(p => p.id === projectId).description = htmlContents;
     });
 
-    fs.writeFileSync(projectDataFile, JSON.stringify(projectData, null, '    '));
+
+    const orderedData = projectData.sort((p1, p2) => p1.order < p2.order ? -1
+                                                   : p1.order > p2.order ? 1
+                                                   : 0);
+
+    fs.writeFileSync(projectDataFile, JSON.stringify(orderedData, null, '    '));
 
     done();
 });

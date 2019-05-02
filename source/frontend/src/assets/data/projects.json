@@ -1,9 +1,25 @@
 [
     {
+        "id": "a10w-shortcuts",
+        "name": "AppShortcuts Plugin for Xamarin and Windows",
+        "short_name": "AppShortcuts Plugin",
+        "icon": "/assets/images/shortcuts_plugin.png",
+        "banner": "/assets/images/shortcuts_banner.png",
+        "technologies": [
+            "Xamarin iOS",
+            "Xamarin Android",
+            "UWP",
+            "Multi-target platform"
+        ],
+        "description": "<p>\r\n    As developers, it's important to make user's lifes as easy as possible. Adding quick actions into our apps enhances\r\n    the UX and can provide additional value for users. For example, many browser apps like Chrome, Edge & Safari have\r\n    shortcuts to open a new incognito tab and the Shazam app includes the ability to initiate a search straight from the\r\n    home screen, saving crucial seconds when you're trying to identify that snippet of a song.\r\n</p>\r\n\r\n<p>\r\n    After trying to find a Plugin that would allow me to add shortcuts into my app and falling short, I decided to build\r\n    my own open source library and provide the functionality for others to use.\r\n</p>\r\n\r\n<p>\r\n    Initially, built using a shared project and conditional compilation, I refactored to use a multi-targeted platform\r\n    approach, which simplified the project structure and made maintenance much easier.\r\n</p>\r\n\r\n<p>\r\n    View the source code:\r\n    <ul>\r\n        <li>AppShortcutsPlugin GitHub - <a\r\n                href=\"https://github.com/adenearnshaw/AppShortcutsPlugin\">github.com/adenearnshaw/AppShortcutsPlugin</a>\r\n        </li>\r\n        <li>AppShortcutsPlugin Nuget - <a\r\n                href=\"https://www.nuget.org/packages/Plugin.AppShortcuts\">nuget.org/packages/Plugin.AppShortcuts</a>\r\n        </li>\r\n    </ul>\r\n</p>",
+        "order": 1
+    },
+    {
         "id": "a10w-midwicket",
         "name": "Midwicket Application",
-        "icon": "/assets/projects/images/midwicket_app.png",
-        "banner": "/assets/projects/images/midwicket_banner.png",
+        "short_name": "MidWicket",
+        "icon": "/assets/images/midwicket_app.png",
+        "banner": "/assets/images/midwicket_banner.png",
         "technologies": [
             "Xamarin Forms",
             "Azure AD B2C",
@@ -13,51 +29,14 @@
             "EF Core"
         ],
         "description": "<p>\r\n    Taking inspiration from a sporting podcast, I decided to learn some new skills by developing a dating app aimed at\r\n    fans of cricket.\r\n    There was a tight deadline imposed, as the podcast was hosting a live event within 2 months and I wanted to have a\r\n    release ready for this.\r\n</p>\r\n\r\n<p>\r\n    My aim was to build a Xamarin Forms app using the latest version of Forms and utilising the newly released Xamarin\r\n    Essentials; backed by an API running on ASP NET Core and using Azure AD B2C for user authentication.\r\n    I'd not had much experience in using EF with code-first migrations, so used this project as an opportunity to delve\r\n    into this further too.\r\n</p>\r\n\r\n<p>An MVP of the app using sample data was successfully built and ready release.\r\n    After discussions with the production team of the podcast however, we decided not to publish to the App store and\r\n    instead use the app in other ways.\r\n    Despite not releasing the app, I was really pleased with the project for the understanding I gained of Azure AD B2C\r\n    and ASP NET Core\r\n</p>\r\n\r\n<p>\r\n    View the source code:\r\n    <ul>\r\n        <li>Midwicket App - <a\r\n                href=\"https://github.com/adenearnshaw/tailenders-forms-app\">github.com/adenearnshaw/tailenders-forms-app</a>\r\n        </li>\r\n        <li>Midwicket API - <a\r\n                href=\"https://github.com/adenearnshaw/tailenders-api\">github.com/adenearnshaw/tailenders-api</a></li>\r\n    </ul>\r\n</p>",
-        "order": 0
-    },
-    {
-        "id": "a10w-shortcuts",
-        "name": "AppShortcuts Plugin for Xamarin and Windows",
-        "icon": "/assets/projects/images/shortcuts_plugin.png",
-        "banner": "/assets/projects/images/shortcuts_banner.png",
-        "technologies": [
-            "Xamarin iOS",
-            "Xamarin Android",
-            "UWP",
-            "Multi-target platform"
-        ],
-        "description": "<p>\r\n    As developers, it's important to make user's lifes as easy as possible. Adding quick actions into our apps enhances\r\n    the UX and can provide additional value for users. For example, many browser apps like Chrome, Edge & Safari have\r\n    shortcuts to open a new incognito tab and the Shazam app includes the ability to initiate a search straight from the\r\n    home screen, saving crucial seconds when you're trying to identify that snippet of a song.\r\n</p>\r\n\r\n<p>\r\n    After trying to find a Plugin that would allow me to add shortcuts into my app and falling short, I decided to build\r\n    my own open source library and provide the functionality for others to use.\r\n</p>\r\n\r\n<p>\r\n    Initially, built using a shared project and conditional compilation, I refactored to use a multi-targeted platform\r\n    approach, which simplified the project structure and made maintenance much easier.\r\n</p>\r\n\r\n<p>\r\n    View the source code:\r\n    <ul>\r\n        <li>AppShortcutsPlugin GitHub - <a\r\n                href=\"https://github.com/adenearnshaw/AppShortcutsPlugin\">github.com/adenearnshaw/AppShortcutsPlugin</a>\r\n        </li>\r\n        <li>AppShortcutsPlugin Nuget - <a\r\n                href=\"https://www.nuget.org/packages/Plugin.AppShortcuts\">nuget.org/packages/Plugin.AppShortcuts</a>\r\n        </li>\r\n    </ul>\r\n</p>",
-        "order": 0
-    },
-    {
-        "id": "dc-citizenapp",
-        "name": "Citizen App by Democracy Counts",
-        "icon": "/assets/projects/images/citizen_app.png",
-        "banner": "",
-        "technologies": [
-            "Xamarin Native",
-            "Azure Notification Hubs"
-        ],
-        "description": "<p>\r\n    The Citizen App from Democracy Counts was imagined to be a white label solution provided to local authorities to be used by households within their administrative region. \r\n    The requirements for the app included the ability for electors to register themselves to vote; change their personal details; confirm all the members of their household; view local representative; communicate with their local authority and receive notifications back. \r\n</p>\r\n\r\n<p>\r\n    Embarking into a new sector, I had very little knowledge of the internal workings of managing the electorate, but with a deadline of 3 weeks to produce a working prototype for an annual trade show, I had my hands full.\r\n</p>\r\n\r\n<p>\r\n    During that time I learnt how councils manage enrollment on the electoral register and what's required of local councils in order for them to lawfully carry out their duties as election officials. \r\n    Working alone, I had to design and build the app from scratch, ensuring the features required were introduced quickly, but in such a way that the code would be resiliant too.\r\n</p>\r\n\r\n<p>\r\n    I decided to use Xamarin Native as the primary technology stack, as there was a desire to highly customise the look and feel of the UI, while keeping startup speed paramount. \r\n    Using a multi-tiered approach, I built the project with separate Logic & UI layers, concentrating on building up a prototype on Android first, with a view to building the iOS UI at a later date. \r\n    Despite only spending a couple of months on the project, I was really pleased with app infrastructure I established, and received positive feedback from other devs who took over the piece.\r\n</p>\r\n\r\n<p>\r\n    View the product page here: <a href=\"https://www.democracycounts.co.uk/citizens-portal\">democracycounts.co.uk/citizens-portal</a>\r\n</p>\r\n",
-        "order": 0
-    },
-    {
-        "id": "sainsburys-eod",
-        "name": "Sainsbury's Entertainment On Demand Video & eBooks App",
-        "icon": "/assets/projects/images/ebooks_app.png",
-        "banner": "/assets/projects/images/ebooks_banner.png",
-        "technologies": [
-            "Windows UAP for Win 8.1",
-            "Windows Phone 8.0"
-        ],
-        "description": "",
-        "order": 0
+        "order": 2
     },
     {
         "id": "sainsburys-ssa",
         "name": "Sainsbury's SmartShop App",
-        "icon": "/assets/projects/images/smartshop_app.png",
-        "banner": "/assets/projects/images/smartshop_banner.png",
+        "short_name": "SmartShop",
+        "icon": "/assets/images/smartshop_app.png",
+        "banner": "/assets/images/smartshop_banner.png",
         "technologies": [
             "Xamarin Forms",
             "Xamarin Native",
@@ -73,13 +52,14 @@
             "Zeplin"
         ],
         "description": "",
-        "order": 0
+        "order": 3
     },
     {
         "id": "wbac-app",
         "name": "WeBuyAnyCar.com",
-        "icon": "/assets/projects/images/wbac_app.png",
-        "banner": "/assets/projects/images/wbac_banner.png",
+        "short_name": "WeBuyAnyCar",
+        "icon": "/assets/images/webuyanycar_app.png",
+        "banner": "/assets/images/webuyanycar_banner.png",
         "technologies": [
             "Xamarin Forms",
             "SQLite",
@@ -88,6 +68,32 @@
             "App Center"
         ],
         "description": "<p>\n    With the company identifying that they wanted to migrate from their existing Cordova app to a Xamarin Forms app, I was brought in to guide the team and teach them how to build a well architected app.\n</p>\n\n<p>\n    \n</p>",
-        "order": 0
+        "order": 4
+    },
+    {
+        "id": "dc-citizenapp",
+        "name": "Citizen App by Democracy Counts",
+        "short_name": "Citizen App",
+        "icon": "/assets/images/citizen_app.png",
+        "banner": "",
+        "technologies": [
+            "Xamarin Native",
+            "Azure Notification Hubs"
+        ],
+        "description": "<p>\r\n    The Citizen App from Democracy Counts was imagined to be a white label solution provided to local authorities to be used by households within their administrative region. \r\n    The requirements for the app included the ability for electors to register themselves to vote; change their personal details; confirm all the members of their household; view local representative; communicate with their local authority and receive notifications back. \r\n</p>\r\n\r\n<p>\r\n    Embarking into a new sector, I had very little knowledge of the internal workings of managing the electorate, but with a deadline of 3 weeks to produce a working prototype for an annual trade show, I had my hands full.\r\n</p>\r\n\r\n<p>\r\n    During that time I learnt how councils manage enrollment on the electoral register and what's required of local councils in order for them to lawfully carry out their duties as election officials. \r\n    Working alone, I had to design and build the app from scratch, ensuring the features required were introduced quickly, but in such a way that the code would be resiliant too.\r\n</p>\r\n\r\n<p>\r\n    I decided to use Xamarin Native as the primary technology stack, as there was a desire to highly customise the look and feel of the UI, while keeping startup speed paramount. \r\n    Using a multi-tiered approach, I built the project with separate Logic & UI layers, concentrating on building up a prototype on Android first, with a view to building the iOS UI at a later date. \r\n    Despite only spending a couple of months on the project, I was really pleased with app infrastructure I established, and received positive feedback from other devs who took over the piece.\r\n</p>\r\n\r\n<p>\r\n    View the product page here: <a href=\"https://www.democracycounts.co.uk/citizens-portal\">democracycounts.co.uk/citizens-portal</a>\r\n</p>\r\n",
+        "order": 5
+    },
+    {
+        "id": "sainsburys-eod",
+        "name": "Sainsbury's Entertainment On Demand Video & eBooks App",
+        "short_name": "Sainsbury's eBooks",
+        "icon": "/assets/images/ebooks_app.png",
+        "banner": "/assets/images/ebooks_banner.png",
+        "technologies": [
+            "Windows UAP for Win 8.1",
+            "Windows Phone 8.0"
+        ],
+        "description": "",
+        "order": 6
     }
 ]

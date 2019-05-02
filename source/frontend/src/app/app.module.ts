@@ -20,8 +20,8 @@ import { ProjectsModule } from './projects/projects.module';
         BrowserModule,
         AppRoutingModule,
         CoreModule,
-        ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
         ProjectsModule,
+        ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     ],
     declarations: [
         AppComponent,

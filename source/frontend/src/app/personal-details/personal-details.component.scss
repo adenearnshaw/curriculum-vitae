@@ -1,3 +1,7 @@
 @import "print.overrides";
 
+.contact-item {
+    padding: 4px 0;
+}
+
 @include personal-details-print-overrides();
