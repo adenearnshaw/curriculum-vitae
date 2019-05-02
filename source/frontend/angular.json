@@ -53,7 +53,8 @@
               "src/assets",
               "src/_redirects",
               "src/robots.txt",
-              "src/manifest.json"
+              "src/manifest.json",
+              "src/browserconfig.xml"
             ],
             "styles": [
               "src/styles/styles.scss"
