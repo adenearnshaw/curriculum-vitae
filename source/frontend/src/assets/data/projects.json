@@ -1,0 +1,93 @@
+[
+    {
+        "id": "a10w-midwicket",
+        "name": "Midwicket Application",
+        "icon": "/assets/projects/images/midwicket_app.png",
+        "banner": "/assets/projects/images/midwicket_banner.png",
+        "technologies": [
+            "Xamarin Forms",
+            "Azure AD B2C",
+            "MSAL",
+            "MVVM Light",
+            "ASP.NET Core 2",
+            "EF Core"
+        ],
+        "description": "<p>Taking inspiration from sporting podcast, I decided to learn some new skills by developing a dating app aimed at fans of cricket.</p>",
+        "order": 0
+    },
+    {
+        "id": "a10w-shortcuts",
+        "name": "AppShortcuts Plugin for Xamarin and Windows",
+        "icon": "/assets/projects/images/shortcuts_plugin.png",
+        "banner": "/assets/projects/images/shortcuts_banner.png",
+        "technologies": [
+            "Xamarin iOS",
+            "Xamarin Android",
+            "UWP",
+            "Multi-target platform"
+        ],
+        "description": "",
+        "order": 0
+    },
+    {
+        "id": "dc-citizenapp",
+        "name": "Citizen App by Democracy Counts",
+        "icon": "/assets/projects/images/citizen_app.png",
+        "banner": "",
+        "technologies": [
+            "Xamarin Native",
+            "Azure Notification Hubs"
+        ],
+        "description": "",
+        "order": 0
+    },
+    {
+        "id": "sainsburys-eod",
+        "name": "Sainsbury's Entertainment On Demand Video & eBooks App",
+        "icon": "/assets/projects/images/ebooks_app.png",
+        "banner": "/assets/projects/images/ebooks_banner.png",
+        "technologies": [
+            "Windows UAP for Win 8.1",
+            "Windows Phone 8.0"
+        ],
+        "description": "",
+        "order": 0
+    },
+    {
+        "id": "sainsburys-ssa",
+        "name": "Sainsbury's SmartShop App",
+        "icon": "/assets/projects/images/smartshop_app.png",
+        "banner": "/assets/projects/images/smartshop_banner.png",
+        "technologies": [
+            "Xamarin Forms",
+            "Xamarin Native",
+            "Windows UAP for Win 8.1",
+            "Zebra Xamarin EMDK",
+            "Prism MVVM",
+            "Windows Services",
+            "Adobe Omniture",
+            "Android",
+            "API Blueprint",
+            "Code management with GitHub",
+            "Sketch",
+            "Zeplin"
+        ],
+        "description": "",
+        "order": 0
+    },
+    {
+        "id": "wbac-app",
+        "name": "WeBuyAnyCar.com",
+        "icon": "/assets/projects/images/wbac_app.png",
+        "banner": "/assets/projects/images/wbac_banner.png",
+        "technologies": [
+            "Xamarin Forms",
+            "SQLite",
+            "Azure DevOps",
+            "TestFlight",
+            "App Center"
+        ],
+        "description": "",
+        "order": 0
+    }
+]

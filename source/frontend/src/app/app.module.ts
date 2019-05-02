@@ -1,26 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
 
+import { AdditionalSkillsComponent } from './additional-skills/additional-skills.component';
 import { AppComponent } from './app.component';
 import { CareerObjectivesComponent } from './career-objectives/career-objectives.component';
+import { EducationHistoryComponent } from './education-history/education-history.component';
 import { EmploymentHistoryComponent } from './employment-history/employment-history.component';
 import { HeaderComponent } from './header/header.component';
 import { PersonalDetailsComponent } from './personal-details/personal-details.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { EducationHistoryComponent } from './education-history/education-history.component';
-import { AdditionalSkillsComponent } from './additional-skills/additional-skills.component';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
+import { ProjectsModule } from './projects/projects.module';
 
 @NgModule({
     imports: [
         BrowserModule,
         AppRoutingModule,
         CoreModule,
-        ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+        ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+        ProjectsModule,
     ],
     declarations: [
         AppComponent,
@@ -28,11 +29,10 @@ import { environment } from '../environments/environment';
         PersonalDetailsComponent,
         CareerObjectivesComponent,
         EmploymentHistoryComponent,
-        PortfolioComponent,
         EducationHistoryComponent,
-        AdditionalSkillsComponent
+        AdditionalSkillsComponent,
     ],
     providers: [],
-    bootstrap: [AppComponent]
+    bootstrap: [AppComponent],
 })
 export class AppModule { }

@@ -1,131 +1,18 @@
 import { Injectable } from '@angular/core';
 
 import { IEmploymentItem } from './models/employment-item';
-import { IPortfolioItem } from './models/portfolio-item';
+import { IProjectItem } from './models/project-item';
+
+import EmploymentHistoryJson from '../../assets/data/employment-history.json';
+import ProjectItems from '../../assets/data/projects.json';
 
 @Injectable()
 export class DataService {
-
-    public getPortfolioItems(): IPortfolioItem[] {
-        return null;
+    public getProjectItems(): IProjectItem[] {
+        return ProjectItems as IProjectItem[];
     }
 
     public getEmploymentHistory(): IEmploymentItem[] {
-        return [
-            {
-                id: 'wbac',
-                date: 'Apr 2017 - Present',
-                employer: 'WeBuyAnyCar.com Ltd',
-                position: 'Software Developer',
-                overview: 'Initially hired to for my expertise in mobile development, I helped the company migrate their public facing mobile app from a Cordova based product to Xamarin Forms. I was responsible for architecting the app’s structure and providing the team and stakeholders with valuable insight surrounding Mobile Design Best Practice.',  // tslint:disable-line
-                details: 'Initially hired to for my expertise in mobile development, I helped the company migrate their public facing mobile app from a Cordova based product to Xamarin Forms. I was responsible for architecting the app’s structure and providing the team and stakeholders with valuable insight surrounding Mobile Design Best Practice.\r\n\r\nFollowing on from the conclusion of this project, my work has focussed on redevelopment of the public website and its accompanying back end systems. Moving the website to an Angular front-end and completelty overhauling the UI.', // tslint:disable-line
-                skills: [
-                    'Xamarin Forms 3.5',
-                    'Azure Devops',
-                    'Octopus Deploy',
-                    'VS App Center & TestFlight',
-                    'ASP.NET Core',
-                    'Angular',
-                    'Sass',
-                    'Jasmine'
-                ]
-            },
-            {
-                id: 'dcl',
-                date: 'Jan 2017 - Apr 2017',
-                employer: 'Democracy Counts Ltd',
-                position: 'Mobile Developer',
-                overview: 'As the only mobile developer employed by the company, it was my responsibility to design and build a proof-of-concept application designed for electors to manage their registrations on the Electoral Roll.', // tslint:disable-line
-                details: 'As the only mobile developer employed by the company, it was my responsibility to design and build a proof-of-concept application designed for electors to manage their registrations on the Electoral Roll.\r\n\r\nA rough version was required within 6 weeks of starting so that it could be demo-ed at the annual tradeshow. Building the application in Xamarin Android with a Portable Class Library (PCL) allowed me to quickly iterate and provide a working demo with push notifications in time for the opening day.\r\n\r\nUsing the PCL approach allowed us to quickly build out the iOS version of the application too, as only the UI needed to be implemented.\r\n\r\nDespite being provided full automony over the product, the role was 100% remote, with the other members of the team on the other side of the country. I found the isolation to be too much and decided, a role which was a little more office based was more suited to me.', // tslint:disable-line
-                skills: [
-                    'Xamarin Native',
-                    'Azure Push Notifications',
-                ]
-            },
-            {
-                id: 'sainsburys',
-                date: 'Jun 2015 - Jan 2017',
-                employer: 'Sainsbury\'s Supermarkets Ltd',
-                position: 'Software Engineer',
-                overview: 'Worked as a member of the SmartShop team developing Windows and Xamarin (Forms & Native) apps to provide support functions for their new in-store Scan & Go service.', // tslint:disable-line
-                details: 'Worked as a member of the SmartShop team developing Windows and Xamarin (Forms & Native) apps to provide support functions for their new in-store Scan & Go service.\r\n\r\nAs part of a small team feature team of devs, I also provided support to the other mobile app devs, pair programming to fix bugs and helping build features on both the native iOS and Android apps.\r\n\r\nAlongside the SmartShop project, I was also required to help maintain the Sainsbury’s Entertainment eBooks and Video On-Demand (VoD) Windows 8.1 UAP apps.', // tslint:disable-line
-                skills: [
-                    'Xamarin Forms 2.1',
-                    'Windows 10 UWP',
-                    'Windows/Phone 8.1 UAP',
-                    'Modern source control practice with GitHub',
-                    'UX & Accessibility as a 1st class citizen'
-                ]
-            },
-            {
-                id: 'verco',
-                date: 'Jul 2013 - Jun 2015',
-                employer: 'Verco Advisory Services Ltd',
-                position: 'Junior Developer',
-                overview: 'Worked on a number of bespoke ASP MVC 5 projects working in both small and medium teams to deliver the software.', // tslint:disable-line
-                details: 'Worked on a number of bespoke ASP MVC 5 projects working in both small and medium teams to deliver the software. As an advocate of Modern Design principles, I’m was frequently tasked with designing assets and providing UX guidance to the rest of the team, as well as ensuring that layouts were device friendly. Working with the full stack, building entire slices of functionality from SQL, to JavaScript, refactoring legacy code where appropriate, or building brand new functionality into the product.', // tslint:disable-line
-                skills: [
-                    'Windows Phone 7/8 Silverlight',
-                    'ASP.NET MVC5',
-                    'KnockoutJS',
-                    'jQuery',
-                    'MSSQL',
-                ]
-            },
-            {
-                id: 'cpw',
-                date: 'Jan 2012 - Jul 2013',
-                employer: 'Carphone Warehouse PLC',
-                position: 'Customer Service Representative',
-                overview: 'Provided support to customers on a wide range of queries. Part of the role also required providing support to the Retail Divisions when required. Alongside this I trained & coached staff, providing support for the management team.', // tslint:disable-line
-                details: 'Provided support to customers on a wide range of queries. Part of the role also required providing support to the Retail Divisions when required. Alongside this I trained & coached staff, providing support for the management team.', // tslint:disable-line
-                isOmittedInPrint: true,
-                skills: [
-                    'Peer-to-peer training'
-                ]
-            },
-            {
-                id: 'bby',
-                date: 'Nov 2010 - Jan 2012',
-                employer: 'Best Buy UK',
-                position: 'Customer Service Advisor',
-                overview: 'As a customer service agent, I was required to provide accurate, up-to-date advice and help on the full range of products, to ensure customer satisfaction. During my time I had to additional duties including Process development, supervision of staff, and building a number of WPF programs to assist all contact centre advisors, including everyday utilities and training development tools.', // tslint:disable-line
-                details: 'As a customer service agent, I was required to provide accurate, up-to-date advice and help on the full range of products, to ensure customer satisfaction. During my time I had to additional duties including Process development, supervision of staff, and building a number of WPF programs to assist all contact centre advisors, including everyday utilities and training development tools.', // tslint:disable-line
-                isOmittedInPrint: true,
-                skills: []
-            },
-            {
-                id: 'morrisons',
-                date: 'Jun 2003 - Nov 2010',
-                employer: 'Wm Morrisons PLC',
-                position: 'Customer Cafe Manager',
-                overview: 'Responsibilities included: Arranging rotas for 20 staff, updating purchasing accounts, recording and ordering stock and expenses, ensuring staff had the guidance they need to develop, carrying out annual appraisals and weekly training updates.', // tslint:disable-line
-                details: 'Initially working part-time to bolster my income while a student, I demonstrated my ability to lead and was promoted from Supervisor while still at university and was promoted further to Manger post-graduation.\r\n\r\nI had to ensure that the Café ran smoothly at all times and that all legal requirements were adhered to. Responsibilities included: Arranging rotas for 20 staff, updating purchasing accounts, recording and ordering stock and expenses, ensuring staff had the guidance they need to develop, carrying out annual appraisals and weekly training updates.', // tslint:disable-line
-                isOmittedInPrint: true,
-                skills: [
-                    'leadership skills'
-                ]
-            },
-            {
-                id: 'multimedia',
-                date: 'Jun 2002 - Nov 2002',
-                employer: 'Multimedia Shop',
-                position: 'Computer Technician',
-                overview: 'I worked in a computer repair and supply shop, building bespoke PCs for customers of varying technical ability and providing support and training to those who needed it.', // tslint:disable-line 
-                details: '',
-                isOmittedInPrint: true,
-                skills: []
-            },
-            {
-                id: 'bt',
-                date: 'Nov 2001',
-                employer: 'British Telecoms',
-                position: 'System Programming Assistant',
-                overview: 'Work experience placement. Helped in facilitating the location and correction of errors in the BT Broadband help desk software using Delphi.', // tslint:disable-line
-                details: '',
-                isOmittedInPrint: true,
-                skills: [ ]
-            }
-        ];
+        return EmploymentHistoryJson as IEmploymentItem[];
     }
 }
