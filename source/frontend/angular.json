@@ -50,6 +50,8 @@
             "assets": [
               "src/favicon.png",
               "src/favicon.ico",
+              "src/apple-touch-icon-precomposed.png",
+              "src/apple-touch-icon.png",
               "src/assets",
               "src/_redirects",
               "src/robots.txt",
