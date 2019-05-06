@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
-import { ProjectListPreviewComponent } from './project-list-preview/project-list-preview.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 
 @NgModule({
@@ -11,22 +10,21 @@ import { ProjectListComponent } from './project-list/project-list.component';
         CommonModule,
         RouterModule.forChild([
             {
-                path: 'projects',
+                path: '',
                 component: ProjectListComponent,
             },
             {
-                path: 'projects:projectId',
+                path: ':projectId',
                 component: ProjectDetailComponent,
             },
         ]),
     ],
     declarations: [
         ProjectDetailComponent,
-        ProjectListPreviewComponent,
         ProjectListComponent,
     ],
     exports: [
-        ProjectListPreviewComponent,
+        RouterModule,
     ]
 })
 export class ProjectsModule { }

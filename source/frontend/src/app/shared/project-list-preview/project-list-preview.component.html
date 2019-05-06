@@ -1,0 +1,15 @@
+<h2>Notable projects</h2>
+
+<div class="project-preview-items">
+    <div *ngFor="let project of projects" class="project-preview-item">
+        <a [routerLink]="['/projects/', project.id]">
+            <div class="project-icon">
+                <img src="{{project.icon}}" alt="{{project.name}}">
+            </div>
+            <div class="project-name">
+                <span class="d-inline-block d-lg-none">{{project.short_name}}</span>
+                <span class="d-none d-lg-inline-block">{{project.name}}</span>
+            </div>
+        </a>
+    </div>
+</div>
