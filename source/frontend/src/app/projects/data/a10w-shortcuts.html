@@ -1,6 +1,6 @@
 <p>
     As developers, it's important to make user's lifes as easy as possible. Adding quick actions into our apps enhances
-    the UX and can provide additional value for users. For example, many browser apps like Chrome, Edge & Safari have
+    the UX and can provide additional value for users. Many browser apps such as Chrome, Edge & Safari have
     shortcuts to open a new incognito tab and the Shazam app includes the ability to initiate a search straight from the
     home screen, saving crucial seconds when you're trying to identify that snippet of a song.
 </p>
@@ -11,18 +11,26 @@
 </p>
 
 <p>
-    Initially, built using a shared project and conditional compilation, I refactored to use a multi-targeted platform
-    approach, which simplified the project structure and made maintenance much easier.
+    The plugin provides developers with the ability to add shortcuts to their Xamarin Android, Xamarin iOS & native UWP apps,
+    or within a Xamarin Forms app that implements 1 or more of the platforms. As part of the native implementation, iOS 
+    provides a number of native icons that can be assigned as part of the icon creation. In order to provide parity between 
+    platform's APIs, the plugin ships with a matching set of icons for both Android & UWP which were put together by myself,
+    ensuring the Plugin is as rich as possible.
+</p>
+
+<p>
+    Following samples provided by James Montemagno, the original version was architected using a shared project and conditional 
+    compilation. Maintaining the plugin across three platforms with so many projects all sharing parts of the code-base was quite
+    a challenge. With the introduction of .Net Standard 2.0 support in Xamarin Forms, I decided to refactor the project to use a 
+    multi-targeted platform approach, which simplified the project structure and makes maintenance much easier.
 </p>
 
 <p>
     View the source code:
     <ul>
-        <li>AppShortcutsPlugin GitHub - <a
-                href="https://github.com/adenearnshaw/AppShortcutsPlugin">github.com/adenearnshaw/AppShortcutsPlugin</a>
+        <li>AppShortcutsPlugin GitHub - <a href="https://github.com/adenearnshaw/AppShortcutsPlugin">github.com/adenearnshaw/AppShortcutsPlugin</a>
         </li>
-        <li>AppShortcutsPlugin Nuget - <a
-                href="https://www.nuget.org/packages/Plugin.AppShortcuts">nuget.org/packages/Plugin.AppShortcuts</a>
+        <li>AppShortcutsPlugin Nuget - <a href="https://www.nuget.org/packages/Plugin.AppShortcuts">nuget.org/packages/Plugin.AppShortcuts</a>
         </li>
     </ul>
 </p>
