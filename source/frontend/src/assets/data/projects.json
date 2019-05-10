@@ -108,6 +108,7 @@
         "technologies": [
             "Xamarin Android",
             "Xamarin iOS",
+            "Mvvm Light",
             "Azure Notification Hubs",
             "ASP .NET Web API"
         ],

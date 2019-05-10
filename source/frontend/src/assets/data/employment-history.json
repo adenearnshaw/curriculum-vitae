@@ -29,6 +29,7 @@
         "details": "As the only mobile developer employed by the company, it was my responsibility to design and build a proof-of-concept application designed for electors to manage their registrations on the Electoral Roll.\r\n\r\nA rough version was required within 6 weeks of starting so that it could be demo-ed at the annual tradeshow. Building the application in Xamarin Android with a Portable Class Library (PCL) allowed me to quickly iterate and provide a working demo with push notifications in time for the opening day.\r\n\r\nUsing the PCL approach allowed us to quickly build out the iOS version of the application too, as only the UI needed to be implemented.\r\n\r\nDespite being provided full automony over the product, the role was 100% remote, with the other members of the team on the other side of the country. I found the isolation to be too much and decided, a role which was a little more office based was more suited to me.",
         "skills": [
             "Xamarin Native",
+            "Mvvm Light",
             "Azure Push Notifications"
         ]
     },
