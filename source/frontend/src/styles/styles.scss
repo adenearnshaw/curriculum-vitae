@@ -73,6 +73,7 @@ section {
     .title-date {
         display: inline-block;
         font-weight: 600;
+        margin-right: 10px;
 
         @include media-breakpoint-up(sm) {
             width: 240px;

@@ -42,7 +42,6 @@
                 "url": ""
             }
         ],
-        
         "description": "<p>\r\n    Taking inspiration from a sporting podcast, I decided to learn some new skills by developing a dating app aimed at\r\n    fans of cricket.\r\n    There was a tight deadline imposed, as the podcast was hosting a live event within 2 months and I wanted to have a\r\n    release ready for this.\r\n</p>\r\n\r\n<p>\r\n    My aim was to build a Xamarin Forms app using the latest version of Forms and utilising the newly released Xamarin\r\n    Essentials; backed by an API running on ASP NET Core and using Azure AD B2C for user authentication.\r\n    I'd not had much experience in using EF with code-first migrations, so used this project as an opportunity to delve\r\n    into this further too.\r\n</p>\r\n\r\n<p>An MVP of the app using sample data was successfully built and ready release.\r\n    After discussions with the production team of the podcast however, we decided not to publish to the App store and\r\n    instead use the app in other ways.\r\n    Despite not releasing the app, I was really pleased with the project for the understanding I gained of Azure AD B2C\r\n    and ASP NET Core\r\n</p>\r\n\r\n<p>\r\n    View the source code:\r\n    <ul>\r\n        <li>Midwicket App - <a\r\n                href=\"https://github.com/adenearnshaw/tailenders-forms-app\">github.com/adenearnshaw/tailenders-forms-app</a>\r\n        </li>\r\n        <li>Midwicket API - <a\r\n                href=\"https://github.com/adenearnshaw/tailenders-api\">github.com/adenearnshaw/tailenders-api</a></li>\r\n    </ul>\r\n</p>",
         "order": 2
     },
@@ -96,7 +95,7 @@
                 "url": ""
             }
         ],
-        "description": "<p>\r\n    With the company identifying that they wanted to migrate from their existing Cordova app to a Xamarin Forms app, I was brought in to guide the team and teach them how to build a well architected app.\r\n</p>\r\n\r\n<p>\r\n    \r\n</p>",
+        "description": "<p>\n    With the company identifying that they wanted to migrate from their existing Cordova app to a Xamarin Forms app, I was brought in to guide the team and teach them how to build a well architected app.\n</p>\n\n<p>\n    \n</p>",
         "order": 4
     },
     {
