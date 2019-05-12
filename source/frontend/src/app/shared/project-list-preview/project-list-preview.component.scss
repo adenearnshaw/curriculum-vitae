@@ -1,0 +1,46 @@
+@import 'media';
+
+.project-preview-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    @include media-breakpoint-up(md) {
+        justify-content: space-between;
+    }
+
+    .project-preview-item {
+        width: 80px;
+        overflow-x: hidden;
+        margin: 0 20px 20px 0px;
+
+        @include media-breakpoint-up(lg) {
+            width: 110px;
+            margin: 0 20px 20px 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        .project-icon {
+            margin-left: auto;
+            margin-right: auto;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+
+        .project-name {
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+
+    .spacer {
+        flex: 1 0 10px;
+    }
+}

@@ -12,7 +12,8 @@
             </div>
         </div>
         <div class="employment-blurb">
-            <p>{{item.overview}}</p>
+            <p class="d-none d-print-block" [innerHtml]="item.overview"></p>
+            <p class="d-block d-print-none" [innerHtml]="item.details"></p>
         </div>
 
         <div class="employment-skills">

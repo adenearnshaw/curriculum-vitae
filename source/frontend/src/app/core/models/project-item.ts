@@ -8,5 +8,12 @@ export interface IProjectItem {
     banner?: string;
     description?: string;
     technologies?: string[];
+    links?: IProjectItemLink[];
     order: number;
+}
+
+export interface IProjectItemLink {
+    type: string;
+    name: string;
+    url: string;
 }

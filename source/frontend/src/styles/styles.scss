@@ -1,14 +1,15 @@
 @import 'reset';
 @import 'bootstrap';
 @import 'colors';
-@import "print.overrides";
+@import 'styles.mixins';
+@import 'print.overrides';
 
 body {
     background-color: $wild-sand;
     color: $mine-shaft;
     font-size: 1rem;
     line-height: 1.8;
-    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", "Roboto", Arial, sans-serif;
+    font-family: 'Segoe UI', SegoeUI, 'Helvetica Neue', 'Roboto', Arial, sans-serif;
 }
 
 h1 {
@@ -37,22 +38,24 @@ p {
 }
 
 a {
-    color: $mine-shaft;
     text-decoration: none;
-
-    &:active,
-    &:focus,
-    &:visited {
-        color: inherit;
-    }
-
-    &:hover {
-        color: lighten($mine-shaft, 30%);
-    }
+    @include link-color($persian-red);
 
     &:focus {
         text-decoration: underline;
         outline: none;
+    }
+
+    &.plain {
+        @include link-color($mine-shaft);
+    }
+}
+
+ul {
+    list-style: disc;
+    
+    li {
+        margin-left: 24px;
     }
 }
 
@@ -70,12 +73,13 @@ section {
     .title-date {
         display: inline-block;
         font-weight: 600;
+        margin-right: 10px;
 
-        @include media-breakpoint-up (sm) {
+        @include media-breakpoint-up(sm) {
             width: 240px;
         }
 
-        @include media-breakpoint-up (lg) {
+        @include media-breakpoint-up(lg) {
             width: 300px;
         }
     }
@@ -84,11 +88,11 @@ section {
         display: inline-block;
         font-style: italic;
 
-        @include media-breakpoint-up (sm) {
+        @include media-breakpoint-up(sm) {
             text-align: right;
         }
 
-        @include media-breakpoint-up (lg) {
+        @include media-breakpoint-up(lg) {
             text-align: left;
         }
     }
@@ -103,7 +107,7 @@ section {
     border-radius: 2px;
     padding: 3px 6px;
 
-    @include media-breakpoint-up (sm) {
+    @include media-breakpoint-up(sm) {
         font-size: 12px;
         margin: 0 10px 10px 0;
         padding: 5px 10px;

@@ -1,3 +1,31 @@
-<p>
-  project-detail works!
-</p>
+<ng-container *ngIf="project">
+    <div class="row">
+        <div class="col-12">
+            <h3 class="project-name">{{project.name}}</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-8">
+            <img *ngIf="project.banner" [src]="project.banner" class="project-banner">
+
+            <div [innerHtml]="project.description" class="project-description"></div>
+        </div>
+
+        <div class="col-3 offset-1">
+            <div>
+                <img [src]="project.icon" class="project-icon"> 
+            </div>
+
+            <div>
+                <h3>Tech stack</h3>
+                <ul class="project-technologies">
+                    <li *ngFor="let technology of project.technologies">
+                        {{technology}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</ng-container>
