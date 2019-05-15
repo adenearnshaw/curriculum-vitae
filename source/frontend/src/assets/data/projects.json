@@ -84,6 +84,7 @@
         "technologies": [
             "Xamarin Forms",
             "SQLite",
+            "Mvvm Light",
             "Azure DevOps",
             "TestFlight",
             "App Center"
