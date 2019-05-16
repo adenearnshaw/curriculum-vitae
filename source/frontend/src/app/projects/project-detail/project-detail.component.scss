@@ -1,18 +1,52 @@
+@import 'colors';
+@import 'media';
 
 .project-name {
     font-weight: 600;
     margin-bottom: 10px;
 }
 
+.project-icon-main {
+    max-width: 100px;
+    border: 2px solid $alto;
+    border-radius: 10px;
+
+    @include media-breakpoint-up(lg) {
+        max-width: 110px;
+        margin-bottom: 20px;
+    }
+}
+
 .project-banner {
-    max-height: 200px;
+    width: 100%;
+    max-height: none;
+
+    @include media-breakpoint-up(lg) {
+        width: auto;
+        max-height: 200px;
+    }
 }
 
 .project-description {
     text-align: justify;
     margin-bottom: 100px;
+
+    ul {
+        li {
+            overflow-wrap: break-word;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+    }
 }
 
 p {
     margin-bottom: 20px;
+}
+
+.project-technologies {
+    li {
+        list-style: none;
+        margin-left: 0;
+    }
 }

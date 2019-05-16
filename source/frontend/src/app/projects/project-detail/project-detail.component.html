@@ -1,27 +1,47 @@
 <ng-container *ngIf="project">
-    <div class="row">
+    <div class="row d-none d-lg-flex">
         <div class="col-12">
             <h3 class="project-name">{{project.name}}</h3>
         </div>
     </div>
 
+    <div class="row d-flex d-lg-none mb-4 mb-lg-0">
+        <div class="col-12">
+            <h3 class="project-name">{{project.name}}</h3>
+        </div>
+
+        <div class="w-100"></div>
+
+        <div class="col-auto">
+            <img [src]="project.icon" class="project-icon-main">
+        </div>
+        <div class="col tech-stack">
+            <ul class="project-technologies">
+                <li *ngFor="let technology of project.technologies" class="skill">
+                    {{technology}}
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <div class="row">
-        <div class="col-8">
+        <div class="col-12 col-lg-8 order-2 order-lg-1">
             <img *ngIf="project.banner" [src]="project.banner" class="project-banner">
 
             <div [innerHtml]="project.description" class="project-description"></div>
         </div>
 
-        <div class="col-3 offset-1">
+        <div class="col-12 col-lg-3 offset-lg-1 order-1 order-lg-2 d-none d-lg-block">
             <div>
-                <img [src]="project.icon" class="project-icon"> 
+                <img [src]="project.icon" class="project-icon-main">
             </div>
 
-            <div>
-                <h3>Tech stack</h3>
+            <div class="tech-stack">
                 <ul class="project-technologies">
                     <li *ngFor="let technology of project.technologies">
-                        {{technology}}
+                        <div class="skill">
+                            {{technology}}
+                        </div>
                     </li>
                 </ul>
             </div>
