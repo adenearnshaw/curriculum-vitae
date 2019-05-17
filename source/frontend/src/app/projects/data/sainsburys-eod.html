@@ -1,0 +1,20 @@
+<p>
+        Sainsbury&apos;s Entertainment on Demand offering was a suite of apps which were some of Sainsbury&apos;s earliest forays into providing digital services to its customers. 
+        The suite included apps for browsing digital magazines, browsing &amp; purchasing music, renting &amp; watching movies and an eBook reader. 
+        All apps were available on iOS &amp; Android, with the Movies and eBooks apps also available on Windows Phone 8 and Windows 8 through a Win UAP app for each.
+    </p>
+    
+    <p>
+        Both the Movies and eBooks apps were architected with a similar approach. As was recommended, the apps followed an MVVM pattern to try and maximise code reuse. 
+        At their core was shared Portable Class Library which housed code common to both apps, providing helper classes, authorization & authentication providers and other 
+        structural code that could be used throughout both apps. 
+        Each product then had its own PCL which housed logic specific to the functionality of each app, such as how to handle video streams and buffers; how to parse various eBook formats,
+        and provide ViewModels to expose data. 
+        By working in this way, my team could share as much code as possible, only having to diverge at the frontend where UI framework APIs differed between WP8 & Win8. With Microsoft releasing 
+        Windows 8.1 for both desktop & phone and introducing Shared Projects, we were even able to consolodate the UI code.
+    </p>
+    
+    <p>
+        As interest waned in the Entertainment on Demand products, more of my time was diverted to the <a href="/projects/sainsburys-ssa">SmartShop project</a>. With the stability of the 
+        shared code from the EoD apps, I was able to quickly build MVP apps to help support the project's progress.
+    </p>

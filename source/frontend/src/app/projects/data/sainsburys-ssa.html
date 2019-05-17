@@ -1,0 +1,55 @@
+<p>
+    SmartShop is a multi-million pound project undertaken by Sainsbury&apos;s to investigate and trial new shopping experiences to improve the experiences of all customers within their stores.
+    While Sainsbury&apos;s already had some supermarkets fitted with scanners that customers could use to scan their shopping as they went, the handsets were dumb terminals which weren&apos;t easy to use, with most remaining in their cradles.
+    Initially SmartShop was put forward as a replacement for the old &apos;Scan &amp; Go&apos; system, but with the added benefit of running on Android devices, allowing for a more interactive experience.
+</p>
+
+<p>
+    The basic premise was that a shopper would use the SmartShop app on their phone to build their shopping list, then once they reached the store, either scan the items with their own phone, or 
+    if they preferred, use their Nectar card to unlock one of the handsets instore, with their Shopping List auto populating on the device. In order for a successful trial, a number of apps were 
+    required:
+
+    <ul>
+        <li>Native Customer apps for iOS & Android</li>
+        <li>Native Android app to run on the instore handset</li>
+        <li>Windows 8.1 UAP app to allow non-phone users to register their Nectar card with the program and unlock handsets from their instore cradles</li>
+        <li>Windows Phone 8.1 UAP app used by Colleagues to address any issue and provide security checks when required by the system</li>
+    </ul>
+
+    As part of a small team, I was responsible for building and maintaining both the Windows apps that customers and colleagues would interact with instore. I worked closely with the developers of
+    the Android Handset app so that we could ensure secure and reliable communication between the devices, required to transfer customer&apos;s data from one device to the other and unlock handsets from their cradles.
+    <br/>
+    The Windows apps were both built with Windows UAP, using Prism as an MVVM framework and following a pattern that we, as a Windows Dev team, had refined whilst building the <a href="/projects/sainsburys-eod" >Entertainment On Demand</a> apps. 
+</p>
+
+<p>
+    In order to release such a large scale project, the SmartShop team consisted of over 90 members, broken down into smaller feature teams depending on their specialities. The Registration and Login App  
+    was a key piece of journey for new users. As we prepared to go live in 2 pilot sites, I was tasked with helping on-site to ensure the installation of the hardware and subsequent deployment of the software went smoothly;
+    working with Network engineers, builders, facilities management and store colleagues to minimise the disruption to the store&apos;s trade.    
+</p>
+
+<p>
+    Throughout the pilot we learnt many things, most importantly (for me), the reliability issue of both Windows devices. The tablets selected for use were not durable enough to withstand 
+    the constant use and the Phone devices used by colleagues were too prone to network drop-off to be of any use.
+    <br/>
+    A decision was made to experiment with Xamarin and see if we could port the Windows Phone Colleague App to one of the Android handsets. Within hours we had a PoC running on the device and had ported the 
+    entire app to Xamrin Forms within 2 weeks. Most of the business logic already sat within a PCL, allowing us to import this directly into the Xamarin Forms app, with most of the time spent 
+    converting the different flavours of XAML and working out how to port platform specific services from Windows to Android.
+    <br/>
+    After the success of porting the Colleague App, we moved to migrating the Registration & SignIn app to Xamarin too, redesigning and re-styling the layout as we went, and proving to key 
+    stakeholders, that Xamarin was a viable option for producing apps quickly without compromising on the UI.
+</p>
+
+
+<p>
+    Since working on the project, there have been over 20 more stores where the handsets and tablets have been deployed and the project has been iterated on even further 
+    with the recent launch of a completely <a href="https://www.bbc.co.uk/news/technology-45172631" target="_blank">till-free store</a>. 
+</p>
+
+
+<p>
+    Official SmartShop home page
+    <ul>
+        <li><a href="https://www.sainsburys.co.uk/shop/gb/groceries/get-ideas/our-freebies-and-competitions/our-freebies-and-competitions/smartshop-app">Sainsbury&apos;s Smartshop</a></li>
+    </ul>
+</p>

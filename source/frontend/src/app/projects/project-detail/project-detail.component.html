@@ -28,7 +28,7 @@
         <div class="col-12 col-lg-8 order-2 order-lg-1">
             <img *ngIf="project.banner" [src]="project.banner" class="project-banner">
 
-            <div [innerHtml]="project.description" class="project-description"></div>
+            <div [innerHtml]="project.description | safe: 'html'" class="project-description" routeTransformer></div>
         </div>
 
         <div class="col-12 col-lg-3 offset-lg-1 order-1 order-lg-2 d-none d-lg-block">
