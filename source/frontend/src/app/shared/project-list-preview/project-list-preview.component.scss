@@ -2,16 +2,24 @@
 
 .project-preview-items {
     align-items: flex-start;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    @include media-breakpoint-up(xs) {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
 
     .project-preview-item {
         margin-bottom: 16px;
         padding-left: 0px;
         padding-right: 0px;
 
-        // @include media-breakpoint-up(xs) {
-        //     padding-left: initial;
-        //     padding-right: initial;
-        //}
+        @include media-breakpoint-up(xs) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
 
         @include media-breakpoint-up(md) {
             margin-bottom: 30px;
@@ -21,15 +29,16 @@
             img {
                 display: block;
                 border-radius: 6px;
-                width: 64px;
+                width: 100%;
+                max-width: 64px;
 
                 @include media-breakpoint-up(xs) {
                     border-radius: 10px;
-                    width: 80px;
+                    max-width: 80px;
                 }
 
                 @include media-breakpoint-up(md) {
-                    width: 110px;
+                    max-width: 110px;
                 }
             }
         }
@@ -37,17 +46,20 @@
         .project-name {
             font-size: 12px;
             text-align: center;
-            width: 60px;
+            width: 100%;
+            max-width: 60px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
 
             @include media-breakpoint-up(xs) {
-                width: 80px;
+                max-width: 80px;
+                overflow: visible;
+                white-space: normal;
             }
 
             @include media-breakpoint-up(md) {
-                width: 110px;
+                max-width: 110px;
             }
         }
     }
