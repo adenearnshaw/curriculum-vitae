@@ -1,46 +1,54 @@
 @import 'media';
 
 .project-preview-items {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-
-    @include media-breakpoint-up(md) {
-        justify-content: space-between;
-    }
+    align-items: flex-start;
 
     .project-preview-item {
-        width: 80px;
-        overflow-x: hidden;
-        margin: 0 20px 20px 0px;
+        margin-bottom: 16px;
+        padding-left: 0px;
+        padding-right: 0px;
 
-        @include media-breakpoint-up(lg) {
-            width: 110px;
-            margin: 0 20px 20px 0;
-        }
+        // @include media-breakpoint-up(xs) {
+        //     padding-left: initial;
+        //     padding-right: initial;
+        //}
 
-        &:last-child {
-            margin-right: 0;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 30px;
         }
 
         .project-icon {
-            margin-left: auto;
-            margin-right: auto;
-
             img {
-                width: 100%;
-                border-radius: 10px;
+                display: block;
+                border-radius: 6px;
+                width: 64px;
+
+                @include media-breakpoint-up(xs) {
+                    border-radius: 10px;
+                    width: 80px;
+                }
+
+                @include media-breakpoint-up(md) {
+                    width: 110px;
+                }
             }
         }
 
         .project-name {
             font-size: 12px;
             text-align: center;
-        }
-    }
+            width: 60px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
 
-    .spacer {
-        flex: 1 0 10px;
+            @include media-breakpoint-up(xs) {
+                width: 80px;
+            }
+
+            @include media-breakpoint-up(md) {
+                width: 110px;
+            }
+        }
     }
 }

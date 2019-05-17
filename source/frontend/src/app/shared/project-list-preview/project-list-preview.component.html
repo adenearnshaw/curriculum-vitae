@@ -1,7 +1,7 @@
 <h2>Notable projects</h2>
 
-<div class="project-preview-items">
-    <div *ngFor="let project of projects" class="project-preview-item">
+<div class="row no-gutters project-preview-items">
+    <div *ngFor="let project of projects" class="col-3 col-lg-2 project-preview-item">
         <a [routerLink]="['/projects/', project.id]">
             <div class="project-icon">
                 <img src="{{project.icon}}" alt="{{project.name}}">
