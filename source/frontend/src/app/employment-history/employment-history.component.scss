@@ -5,4 +5,16 @@
     margin-bottom: 40px;
 }
 
+.expand-employment {
+    font-size: 1rem;
+    color: $mine-shaft;
+    float: right;
+    display: flex;
+    align-items: center;
+
+    cv-toggle-switch {
+        margin-left: 10px;
+    }
+}
+
 @include employment-history-print-overrides();

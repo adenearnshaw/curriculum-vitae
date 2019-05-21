@@ -1,26 +1,39 @@
 <ng-container *ngIf="employmentItems.length > 0">
 
-    <h2>Employment</h2>
+    <h2>
+        Employment
 
-    <div *ngFor="let item of employmentItems" class="employment-section" [class.d-print-none]="item.isOmittedInPrint">
-        <div class="section-title">
-            <div class="title-date">{{item.date}}</div>
-            <div class="title-name">
-                <span>{{item.employer}}</span>
-                <span>&nbsp;-&nbsp;</span>
-                <span>{{item.position}}</span>
-            </div>
+        <div class="expand-employment">
+            Show all
+            <cv-toggle-switch [(isChecked)]="showAllEmployment"></cv-toggle-switch>
         </div>
-        <div class="employment-blurb">
-            <p class="d-none d-print-block" [innerHtml]="item.overview"></p>
-            <p class="d-block d-print-none" [innerHtml]="item.details"></p>
-        </div>
+    </h2>
 
-        <div class="employment-skills">
-            <div *ngFor="let skill of item.skills" class="skill">
-                {{skill}}
+
+    <ng-container *ngFor="let item of employmentItems">
+        <ng-container *ngIf="!item.isOmittedInPrint || showAllEmployment">
+            <div class="employment-section" [class.d-print-none]="item.isOmittedInPrint">
+                <div class="section-title">
+                    <div class="title-date">{{item.date}}</div>
+                    <div class="title-name">
+                        <span>{{item.employer}}</span>
+                        <span>&nbsp;-&nbsp;</span>
+                        <span>{{item.position}}</span>
+                    </div>
+                </div>
+
+                <div class="employment-blurb">
+                    <p class="d-none d-print-block" [innerHtml]="item.overview"></p>
+                    <p class="d-block d-print-none" [innerHtml]="item.details"></p>
+                </div>
+
+                <div class="employment-skills">
+                    <div *ngFor="let skill of item.skills" class="skill">
+                        {{skill}}
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        </ng-container>
+    </ng-container>
 
 </ng-container>
