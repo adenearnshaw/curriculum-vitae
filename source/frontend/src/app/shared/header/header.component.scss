@@ -30,45 +30,6 @@ header {
             }
         }
     }
-
-    .print-button {
-        position: absolute;
-        border: 1px solid $mine-shaft;
-        border-radius: 20px;
-        top: 30px;
-        right: 40px;
-        cursor: pointer;
-        display: none;
-
-        &:hover {
-            border-color: $persian-red;
-            color: $persian-red;
-        }
-
-        @media only screen and (min-width: 1500px) {
-            display: block;
-        }
-
-        .print-button-content {
-            position: static;
-            display: flex;
-            align-items: center;
-
-            img {
-                display: inline-block;
-                padding: 0px 10px 0px 10px;
-                height: 40px;
-                width: 50px;
-            }
-
-            div {
-                display: inline-block;
-                padding: 0px 25px 0px 0;
-            }
-        }
-
-       
-    }
-
+    
     @include header-print-overrides();
 }

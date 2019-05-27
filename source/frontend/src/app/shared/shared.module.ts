@@ -7,6 +7,7 @@ import { RouteTransformerDirective } from './directives/route-transformer.direct
 import { HeaderComponent } from './header/header.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SafePipe } from './pipes/safe.pipe';
+import { PrintButtonComponent } from './print-button/print-button.component';
 import { ProjectListPreviewComponent } from './project-list-preview/project-list-preview.component';
 
 @NgModule({
@@ -21,6 +22,7 @@ import { ProjectListPreviewComponent } from './project-list-preview/project-list
         SafePipe,
         RouteTransformerDirective,
         ToggleSwitchComponent,
+        PrintButtonComponent,
     ],
     exports: [
         CommonModule,
@@ -31,6 +33,7 @@ import { ProjectListPreviewComponent } from './project-list-preview/project-list
         SafePipe,
         RouteTransformerDirective,
         ToggleSwitchComponent,
+        PrintButtonComponent,
     ],
 })
 export class SharedModule { }

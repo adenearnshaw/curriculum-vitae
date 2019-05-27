@@ -37,6 +37,10 @@ p {
     margin-bottom: 10px;
 }
 
+i {
+    font-style: italic;
+}
+
 a {
     text-decoration: none;
     @include link-color($persian-red);
@@ -48,6 +52,10 @@ a {
 
     &.plain {
         @include link-color($mine-shaft);
+    }
+
+    img {
+        cursor: pointer;
     }
 }
 
@@ -70,6 +78,10 @@ strong {
 
 section {
     margin-bottom: 50px;
+}
+
+.page-break {
+    display: none;
 }
 
 .section-title {

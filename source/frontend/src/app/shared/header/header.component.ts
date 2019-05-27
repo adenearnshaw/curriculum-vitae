@@ -8,10 +8,4 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent {
 
     public constructor() { }
-
-    public printWindow(): void {
-        if (window) {
-            window.print();
-        }
-    }
 }
