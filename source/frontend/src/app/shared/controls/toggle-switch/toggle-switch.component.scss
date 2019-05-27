@@ -1,10 +1,27 @@
 @import "colors";
 
+$control-height: 30px;
+$control-width: 54px;
+$control-border-width: 1px;
+$control-switch-padding: 3px;
+$control-switch-diameter: $control-height - ($control-switch-padding * 2) - ($control-border-width * 2);
+
+$animation-transition: 300ms ease-in;
+
+$control-background-color: $wild-sand;
+$control-border-color: $mine-shaft;
+$control-switch-color: $alto;
+
+$control-background-checked-color: $persian-red;
+$control-border-checked-color: $persian-red;
+$control-switch-checked-color: $wild-sand;
+
 .toggle-switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: $control_width;
+    height: $control_height;
+    box-sizing: border-box;
     
     input {
         opacity: 0;
@@ -12,19 +29,17 @@
         height: 0;
 
         &:checked + .slider {
-            background-color: $persian-red;
-            border-color: $persian-red;
+            background-color: $control-background-checked-color;
+            border-color: $control-border-checked-color;
 
             &:before {
-                -webkit-transform: translateX(25px);
-                -ms-transform: translateX(25px);
-                transform: translateX(25px);
-                background-color: $wild-sand;
+                transform: translateX($control-width - $control-height - $control-border-width);
+                background-color: $control-switch-checked-color;
             }
         }
 
         &:focus + .slider {
-            box-shadow: 0 0 1px $alto;
+            box-shadow: 0 0 $control-border-width $control-switch-color;
         }
     }
 
@@ -35,25 +50,25 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: $wild-sand;
-        border: 1px solid $mine-shaft;
-        -webkit-transition: 0.4s;
-        transition: 0.4s;
+        background-color: $control-background-color;
+        border: $control-border-width solid $control-border-color;
+        -webkit-transition: $animation-transition;
+        transition: $animation-transition;
 
         &:before {
             position: absolute;
             content: '';
-            height: 26px;
-            width: 26px;
-            left: 4px;
-            bottom: 3px;
-            background-color: $alto;
-            -webkit-transition: 0.4s;
-            transition: 0.4s;
+            height: $control-switch-diameter;
+            width: $control-switch-diameter;
+            left: $control-switch-padding + $control-border-width;
+            bottom: $control-switch-padding;
+            background-color: $control-switch-color;
+            -webkit-transition: $animation-transition;
+            transition: $animation-transition;
         }
 
         &.round {
-            border-radius: 34px;
+            border-radius: $control_height;
 
             &:before {
                 border-radius: 50%;
