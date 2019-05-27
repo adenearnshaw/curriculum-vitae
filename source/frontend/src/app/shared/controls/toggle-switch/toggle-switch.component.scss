@@ -22,6 +22,8 @@ $control-switch-checked-color: $wild-sand;
     width: $control_width;
     height: $control_height;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
     
     input {
         opacity: 0;
