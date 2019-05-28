@@ -5,8 +5,12 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 if (environment.production) {
-  enableProdMode();
+    enableProdMode();
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+    .catch(err => {
+        if (!environment.production) {
+            console.error(err) // tslint:disable-line
+        }
+    });
