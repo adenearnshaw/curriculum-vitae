@@ -1,11 +1,28 @@
 [
     {
+        "id": "itd",
+        "date": "Sep 2019 - Present",
+        "employer": "IT Developers Ltd",
+        "position": "Senior Mobile Developer",
+        "overview": "Employed to take over the development of the company's Taxi Insurance app, which was nearing it's initial release but still needed some fine-tuning to get it over-the-line. Soon I had to also adopt the role of Product Owner, as it became apparent that most of the future requirements were in emails, notebooks or post-its. Working with the project's stakeholders, I helped to formalise, document and prioritise the features and work items. This allowed for a better understanding of the project's scope and gave us a platform to improve the accuracy of completion timescales.",
+        "details": "Employed to take over the development of the company's Taxi Insurance app, which was nearing it's initial release but still needed some fine-tuning to get it over-the-line. Soon I had to also adopt the role of Product Owner, as it became apparent that most of the future requirements were in emails, notebooks or post-its. Working with the project's stakeholders, I helped to formalise, document and prioritise the features and work items. This allowed for a better understanding of the project's scope and gave us a platform to improve the accuracy of completion timescales.<br/><br/>I also helped steer the development team's transition to more modern practices architectures. Introducting PRs, automated builds and deployments, and adding Unit Tests to projects to provide a higher degree of confidence when refactoring applications.",
+        "skills": [
+            "Xamarin Forms 4.4",
+            "Localisation Support",
+            "ASP.NET Core",
+            "Azure Devops CI/CD",
+            "App Center Event Analytics",
+            "Apple & Google App Stores",
+            "Project Ownership/Management"
+        ]
+    },
+    {
         "id": "wbac",
-        "date": "Apr 2017 - Present",
+        "date": "Apr 2017 - Sep 2019",
         "employer": "WeBuyAnyCar.com Ltd",
         "position": "Software Developer",
         "overview": "Hired for my expertise in mobile development, I helped the company migrate their public facing mobile app from a Cordova based product to Xamarin Forms. I was responsible for architecting the app’s structure and providing the team and stakeholders with valuable insight surrounding mobile design best practice.",
-        "details": "Hired for my expertise in mobile development, I helped the company migrate their public facing mobile app from a Cordova based product to Xamarin Forms. I was responsible for architecting the app’s structure and providing the team and stakeholders with valuable insight into mobile design best practice.<br/><br/>Following on from the conclusion of this project, my work has focused on redevelopment of the comapny's public facing website and its accompanying back end systems. Moving the website to an Angular front-end for increased speed and completelty overhauling the UI.",
+        "details": "Hired for my expertise in mobile development, I helped the company migrate their public facing mobile app from a Cordova based product to Xamarin Forms. I was responsible for architecting the app’s structure and providing the team and stakeholders with valuable insight into mobile design best practice.<br/><br/>Following on from the conclusion of this project, my work was focused on the redevelopment of the comapny's public facing website and its accompanying back end systems. Moving the website to an Angular front-end for increased speed and completelty overhauling the UI.",
         "skills": [
             "Xamarin Forms 3.5",
             "Azure Devops",
