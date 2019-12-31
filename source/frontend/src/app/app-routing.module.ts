@@ -9,7 +9,7 @@ const routes: Routes = [
         component: HomeComponent,
         pathMatch: 'full',
     },
-    { path: 'projects', loadChildren: './projects/projects.module#ProjectsModule' },
+    { path: 'projects', loadChildren: () => import('./projects/projects.module').then(m => m.ProjectsModule) },
     { path: '404', component: NotFoundComponent },
     { path: '**', redirectTo: '/404' },
 ];
