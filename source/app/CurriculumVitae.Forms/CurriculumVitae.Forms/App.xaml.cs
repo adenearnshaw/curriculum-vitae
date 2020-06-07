@@ -1,32 +1,25 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using CurriculumVitae.Forms.Services;
+﻿using Xamarin.Forms;
 using CurriculumVitae.Forms.Views;
+using System.Collections.Generic;
 
 namespace CurriculumVitae.Forms
 {
     public partial class App : Application
     {
-
         public App()
         {
+            Xamarin.Forms.Device.SetFlags(new List<string>() {
+                    "Markup_Experimental",
+                    "StateTriggers_Experimental",
+                    "IndicatorView_Experimental",
+                    "CarouselView_Experimental",
+                    "AppTheme_Experimental",
+                    "SwipeView_Experimental"
+            });
+
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
-        }
-
-        protected override void OnStart()
-        {
-        }
-
-        protected override void OnSleep()
-        {
-        }
-
-        protected override void OnResume()
-        {
+            MainPage =  new LoadingPage();
         }
     }
 }

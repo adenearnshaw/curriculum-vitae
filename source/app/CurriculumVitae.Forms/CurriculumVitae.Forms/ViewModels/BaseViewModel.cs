@@ -1,56 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
-
-using Xamarin.Forms;
-
-using CurriculumVitae.Forms.Models;
-using CurriculumVitae.Forms.Services;
+using System;
+using System.Threading.Tasks;
+using CurriculumVitae.Forms.Navigation;
 
 namespace CurriculumVitae.Forms.ViewModels
 {
-    public class BaseViewModel : INotifyPropertyChanged
+    public class BaseViewModel : MvvmHelpers.BaseViewModel, INavigationAware
     {
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
-
-        bool isBusy = false;
-        public bool IsBusy
+        public BaseViewModel()
         {
-            get { return isBusy; }
-            set { SetProperty(ref isBusy, value); }
         }
 
-        string title = string.Empty;
-        public string Title
+        public virtual Task OnNavigatedTo(params object[] navigationParams)
         {
-            get { return title; }
-            set { SetProperty(ref title, value); }
+            return Task.CompletedTask;
         }
 
-        protected bool SetProperty<T>(ref T backingStore, T value,
-            [CallerMemberName] string propertyName = "",
-            Action onChanged = null)
+        public virtual Task OnNavigatingFrom()
         {
-            if (EqualityComparer<T>.Default.Equals(backingStore, value))
-                return false;
-
-            backingStore = value;
-            onChanged?.Invoke();
-            OnPropertyChanged(propertyName);
-            return true;
+            return Task.CompletedTask;
         }
-
-        #region INotifyPropertyChanged
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
-        {
-            var changed = PropertyChanged;
-            if (changed == null)
-                return;
-
-            changed.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-        #endregion
     }
 }

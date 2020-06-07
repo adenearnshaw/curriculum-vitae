@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<views:LoadingBasePage x:Class="CurriculumVitae.Forms.Views.LoadingPage"
+                       xmlns="http://xamarin.com/schemas/2014/forms"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       xmlns:views="clr-namespace:CurriculumVitae.Forms.Views">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <ActivityIndicator HorizontalOptions="Center"
+                           IsEnabled="{Binding IsBusy}"
+                           IsRunning="{Binding IsBusy}" />
+        <Label Margin="0,10,0,0" Text="Loading..." />
+    </StackLayout>
+</views:LoadingBasePage>

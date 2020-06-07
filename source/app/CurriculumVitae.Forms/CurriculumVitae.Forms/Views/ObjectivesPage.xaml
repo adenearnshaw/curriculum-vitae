@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<views:ObjectivesBasePage x:Class="CurriculumVitae.Forms.Views.ObjectivesPage"
+                          xmlns="http://xamarin.com/schemas/2014/forms"
+                          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                          xmlns:views="clr-namespace:CurriculumVitae.Forms.Views"
+                          Title="Career Objectives">
+    <ScrollView>
+        <StackLayout Margin="20">
+            <Image Aspect="AspectFit"
+                   HorizontalOptions="Fill"
+                   Source="header_app.png"
+                   VerticalOptions="Start" />
+            <Label Text="Career Objectives" />
+            <Label Text="{Binding Objectives}" TextType="Html" />
+
+        </StackLayout>
+    </ScrollView>
+</views:ObjectivesBasePage>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Shiny;
 using UIKit;
 
 namespace CurriculumVitae.Forms.iOS
@@ -22,7 +23,7 @@ namespace CurriculumVitae.Forms.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
+            this.ShinyFinishedLaunching(new Startup());
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
