@@ -4,16 +4,19 @@
         "date": "Sep 2019 - Present",
         "employer": "IT Developers Ltd",
         "position": "Senior Mobile Developer",
-        "overview": "Employed to take over the development of the company's Taxi Insurance app, which was nearing it's initial release but still needed some fine-tuning to get it over-the-line. Soon I had to also adopt the role of Product Owner, as it became apparent that most of the future requirements were in emails, notebooks or post-its. Working with the project's stakeholders, I helped to formalise, document and prioritise the features and work items. This allowed for a better understanding of the project's scope and gave us a platform to improve the accuracy of completion timescales.",
-        "details": "Employed to take over the development of the company's Taxi Insurance app, which was nearing it's initial release but still needed some fine-tuning to get it over-the-line. Soon I had to also adopt the role of Product Owner, as it became apparent that most of the future requirements were in emails, notebooks or post-its. Working with the project's stakeholders, I helped to formalise, document and prioritise the features and work items. This allowed for a better understanding of the project's scope and gave us a platform to improve the accuracy of completion timescales.<br/><br/>I also helped steer the development team's transition to more modern practices architectures. Introducting PRs, automated builds and deployments, and adding Unit Tests to projects to provide a higher degree of confidence when refactoring applications.",
+        "overview": "With my experience of architecting and releasing consumer facing apps to market, I was brought on board to complete and ship a new Taxi Insurance app for IT Developers' parent company Acorn Insurance. The app was close to its initial release, but still needed some fine tuning and work with senior stakeholders to reach approval for release.",
+        "details": "With my experience of architecting and releasing consumer facing apps to market, I was brought on board to complete and ship a new Taxi Insurance app for IT Developers' parent company Acorn Insurance. The app was close to its initial release, but still needed some fine tuning and work with senior stakeholders to reach approval for release.<br/><br/>I have helped steer the development team's transition to more modern practices, using tools such as Azure Devops to formally document requirements; worked with stakeholders to prioritise new features; started daily Standups and Sprint Reviews; introduced Peer Reviews and Pair Programming to improve the quality of work; and built CI/CD pipelines to automate builds and deployments.",
         "skills": [
-            "Xamarin Forms 4.4",
+            "Xamarin Forms 4.6",
             "Localisation Support",
             "ASP.NET Core",
+            "Swagger",
             "Azure Devops CI/CD",
             "App Center Event Analytics",
             "Apple & Google App Stores",
-            "Project Ownership/Management"
+            "Project Ownership/Management",
+            "Docker",
+            "MongoDB"
         ]
     },
     {
