@@ -8,6 +8,8 @@ namespace CurriculumVitae.Forms.Views
         public ObjectivesPage()
         {
             InitializeComponent();
+            Shell.SetNavBarIsVisible(this, false);
+
         }
     }
 

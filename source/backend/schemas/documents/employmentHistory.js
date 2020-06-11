@@ -14,6 +14,11 @@ export default {
             type: 'string'
         },
         {
+            name: 'brandColor',
+            title: 'Brand Color',
+            type: 'color'
+        },
+        {
             name: 'position',
             title: 'Position',
             type: 'string'

@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 
 namespace CurriculumVitae.Forms.Models
@@ -7,5 +6,6 @@ namespace CurriculumVitae.Forms.Models
     {
         public List<ContactDetail> ContactDetails { get; set; }
         public string CareerObjectives { get; set; }
+        public List<EmploymentDetail> EmploymentDetails { get; set; }
     }
 }

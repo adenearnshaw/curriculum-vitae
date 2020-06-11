@@ -2,16 +2,35 @@
 <views:ObjectivesBasePage x:Class="CurriculumVitae.Forms.Views.ObjectivesPage"
                           xmlns="http://xamarin.com/schemas/2014/forms"
                           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                          xmlns:rv="clr-namespace:Sharpnado.MaterialFrame;assembly=Sharpnado.MaterialFrame"
                           xmlns:views="clr-namespace:CurriculumVitae.Forms.Views"
                           Title="Career Objectives">
+    <Page.BackgroundImageSource>
+        <FileImageSource File="bg_abstract.png" />
+    </Page.BackgroundImageSource>
+
     <ScrollView>
         <StackLayout Margin="20">
-            <Image Aspect="AspectFit"
+            <Image Margin="20,5,20,10"
+                   Aspect="AspectFit"
                    HorizontalOptions="Fill"
                    Source="header_app.png"
                    VerticalOptions="Start" />
-            <Label Text="Career Objectives" />
-            <Label Text="{Binding Objectives}" TextType="Html" />
+
+            <Label Style="{StaticResource SectionHeadingLabelStyle}" Text="Career Objectives" />
+            <rv:MaterialFrame>
+                <Label Text="{Binding Objectives}" TextType="Html" />
+            </rv:MaterialFrame>
+
+            <Label Style="{StaticResource SectionHeadingLabelStyle}" Text="Career Objectives" />
+            <rv:MaterialFrame>
+                <Label Text="{Binding Objectives}" TextType="Html" />
+            </rv:MaterialFrame>
+
+            <Label Style="{StaticResource SectionHeadingLabelStyle}" Text="Career Objectives" />
+            <rv:MaterialFrame>
+                <Label Text="{Binding Objectives}" TextType="Html" />
+            </rv:MaterialFrame>
 
         </StackLayout>
     </ScrollView>

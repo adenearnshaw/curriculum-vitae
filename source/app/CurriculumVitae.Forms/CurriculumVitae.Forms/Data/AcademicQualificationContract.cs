@@ -1,6 +1,5 @@
 ﻿using System;
 using Newtonsoft.Json;
-using Sanity.Linq;
 using Sanity.Linq.CommonTypes;
 
 namespace CurriculumVitae.Forms.Data

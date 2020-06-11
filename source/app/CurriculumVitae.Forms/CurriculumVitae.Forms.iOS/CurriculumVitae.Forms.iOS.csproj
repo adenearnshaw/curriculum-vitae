@@ -126,6 +126,18 @@
     <ImageAsset Include="Assets.xcassets\header_app.imageset\header_app.png" />
     <ImageAsset Include="Assets.xcassets\header_app.imageset\header_app%402x.png" />
     <ImageAsset Include="Assets.xcassets\header_app.imageset\header_app%403x.png" />
+    <ImageAsset Include="Assets.xcassets\bg_honeycomb.imageset\bg_honeycomb%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\bg_honeycomb.imageset\bg_honeycomb%402x.jpg" />
+    <ImageAsset Include="Assets.xcassets\bg_honeycomb.imageset\bg_honeycomb.jpg" />
+    <ImageAsset Include="Assets.xcassets\bg_honeycomb.imageset\Contents.json">
+      <Visible>False</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\bg_abstract.imageset\bg_abstract%403x.png" />
+    <ImageAsset Include="Assets.xcassets\bg_abstract.imageset\bg_abstract%402x.png" />
+    <ImageAsset Include="Assets.xcassets\bg_abstract.imageset\bg_abstract.png" />
+    <ImageAsset Include="Assets.xcassets\bg_abstract.imageset\Contents.json">
+      <Visible>False</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -140,6 +152,9 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
     <PackageReference Include="Shiny.Core">
       <Version>1.2.0.1686</Version>
+    </PackageReference>
+    <PackageReference Include="Sharpnado.MaterialFrame">
+      <Version>1.1.0</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

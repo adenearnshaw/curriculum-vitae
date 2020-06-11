@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<views:EmploymentListBasePage x:Class="CurriculumVitae.Forms.Views.EmploymentListPage"
+                              xmlns="http://xamarin.com/schemas/2014/forms"
+                              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                              xmlns:model="clr-namespace:CurriculumVitae.Forms.Models"
+                              xmlns:rv="clr-namespace:Sharpnado.MaterialFrame;assembly=Sharpnado.MaterialFrame"
+                              xmlns:views="clr-namespace:CurriculumVitae.Forms.Views"
+                              Title="Employment History">
+    <Page.BackgroundImageSource>
+        <FileImageSource File="bg_abstract.png" />
+    </Page.BackgroundImageSource>
+
+    <!--<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Label Style="{StaticResource PageHeadingLabelStyle}" Text="Employment History" />-->
+
+    <CollectionView ItemSizingStrategy="MeasureAllItems" ItemsSource="{Binding EmploymentDetails}">
+        <CollectionView.Header>
+            <ContentView HeightRequest="20" />
+        </CollectionView.Header>
+        <CollectionView.ItemTemplate>
+            <DataTemplate x:DataType="{x:Type model:EmploymentDetail}">
+                <ContentView>
+                    <rv:MaterialFrame Margin="10,0,10,10">
+                        <StackLayout>
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span FontAttributes="Bold"
+                                              FontSize="14"
+                                              Text="{Binding Position}" />
+                                        <Span FontSize="14" Text=" - " />
+                                        <Span FontSize="14" Text="{Binding Employer}" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+                            <Label FontAttributes="Italic" Text="{Binding Dates}" />
+
+
+                            <Label Text="{Binding Overview}" />
+
+                            <FlexLayout AlignItems="Center"
+                                        BindableLayout.ItemsSource="{Binding Skills}"
+                                        Direction="Row"
+                                        JustifyContent="Start"
+                                        Wrap="Wrap">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate x:DataType="{x:Type x:String}">
+                                        <Frame Margin="2,2,2,2"
+                                               Padding="4,2"
+                                               BackgroundColor="#212121"
+                                               CornerRadius="4">
+                                            <Label FontSize="10"
+                                                   Text="{Binding}"
+                                                   TextColor="#FFFFFF" />
+                                        </Frame>
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </FlexLayout>
+                        </StackLayout>
+                    </rv:MaterialFrame>
+                </ContentView>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+
+    <!--</Grid>-->
+
+</views:EmploymentListBasePage>

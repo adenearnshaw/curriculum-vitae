@@ -11,6 +11,7 @@
     <PackageReference Include="Sanity.Linq" Version="1.4.2" />
     <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
     <PackageReference Include="Shiny.Core" Version="1.2.0.1686" />
+    <PackageReference Include="Sharpnado.MaterialFrame" Version="1.1.0" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Views\ItemDetailPage.xaml">

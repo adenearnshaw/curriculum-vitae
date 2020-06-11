@@ -18,6 +18,8 @@ namespace CurriculumVitae.Forms.Data
 
         public string Employer { get; set; }
 
+        public SanityColor BrandColor { get; set; }
+
         public string Position { get; set; }
 
         [JsonProperty("start_date")]

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Sharpnado.MaterialFrame.iOS;
 using Shiny;
 using UIKit;
 
@@ -25,6 +26,9 @@ namespace CurriculumVitae.Forms.iOS
         {
             this.ShinyFinishedLaunching(new Startup());
             global::Xamarin.Forms.Forms.Init();
+
+            iOSMaterialFrameRenderer.Init();
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

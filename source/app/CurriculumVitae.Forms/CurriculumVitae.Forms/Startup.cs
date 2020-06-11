@@ -2,7 +2,6 @@ using System;
 using CurriculumVitae.Forms.Data;
 using CurriculumVitae.Forms.Managers;
 using CurriculumVitae.Forms.ViewModels;
-using CurriculumVitae.Forms.Views;
 using Microsoft.Extensions.DependencyInjection;
 using Shiny;
 
@@ -16,8 +15,10 @@ namespace CurriculumVitae.Forms
 
             services.AddSingleton<CvDataManager>();
 
+            services.AddTransient<EmploymentListPageViewModel>();
             services.AddTransient<LoadingPageViewModel>();
             services.AddTransient<ObjectivesPageViewModel>();
+            services.AddTransient<PortfolioPageViewModel>();
         }
 
         public override void ConfigureApp(IServiceProvider provider)
