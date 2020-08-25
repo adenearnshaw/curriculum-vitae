@@ -10,6 +10,7 @@ export interface IProjectItem {
     technologies?: string[];
     links?: IProjectItemLink[];
     order: number;
+    is_hidden: boolean;
 }
 
 export interface IProjectItemLink {

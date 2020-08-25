@@ -13,8 +13,9 @@ export class ProjectListPreviewComponent implements OnInit {
     public constructor(private readonly dataService: DataService) { }
 
     public ngOnInit() {
-        this.dataService.projectItems.subscribe((data) => {
-            this.projects = data.sort((p1, p2) => p1.order < p2.order ? -1
+        this.dataService.projectItems.subscribe(data => {
+            this.projects = data.filter(i => !i.is_hidden)
+                                .sort((p1, p2) => p1.order < p2.order ? -1
                                                 : p1.order > p2.order ? 1
                                                 : 0);
         });

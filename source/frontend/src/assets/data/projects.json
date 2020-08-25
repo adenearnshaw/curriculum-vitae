@@ -19,31 +19,8 @@
             }
         ],
         "description": "<p>\r\n    As developers, it's important to make user's lifes as easy as possible. Adding quick actions into our apps enhances\r\n    the UX and can provide additional value for users. Many browser apps such as Chrome, Edge & Safari have\r\n    shortcuts to open a new incognito tab and the Shazam app includes the ability to initiate a search straight from the\r\n    home screen, saving crucial seconds when you're trying to identify that snippet of a song.\r\n</p>\r\n\r\n<p>\r\n    After trying to find a Plugin that would allow me to add shortcuts into my app and falling short, I decided to build\r\n    my own open source library and provide the functionality for others to use.\r\n</p>\r\n\r\n<p>\r\n    The plugin provides developers with the ability to add shortcuts to their Xamarin Android, Xamarin iOS & native UWP apps,\r\n    or within a Xamarin Forms app that implements 1 or more of the platforms. As part of the native implementation, iOS \r\n    provides a number of native icons that can be assigned as part of the icon creation. In order to provide parity between \r\n    platform's APIs, the plugin ships with a matching set of icons for both Android & UWP which were put together by myself,\r\n    ensuring the Plugin is as rich as possible.\r\n</p>\r\n\r\n<p>\r\n    Following samples provided by James Montemagno, the original version was architected using a shared project and conditional \r\n    compilation. Maintaining the plugin across three platforms with so many projects all sharing parts of the code-base was quite\r\n    a challenge. With the introduction of .Net Standard 2.0 support in Xamarin Forms, I decided to refactor the project to use a \r\n    multi-targeted platform approach, which simplified the project structure and makes maintenance much easier.\r\n</p>\r\n\r\n<p>\r\n    View the source code:\r\n    <ul>\r\n        <li>AppShortcutsPlugin GitHub - <a href=\"https://github.com/adenearnshaw/AppShortcutsPlugin\">github.com/adenearnshaw/AppShortcutsPlugin</a>\r\n        </li>\r\n        <li>AppShortcutsPlugin Nuget - <a href=\"https://www.nuget.org/packages/Plugin.AppShortcuts\">nuget.org/packages/Plugin.AppShortcuts</a>\r\n        </li>\r\n    </ul>\r\n</p>",
-        "order": 1
-    },
-    {
-        "id": "a10w-midwicket",
-        "name": "Midwicket Application",
-        "short_name": "MidWicket",
-        "icon": "/assets/images/midwicket_app.png",
-        "banner": "/assets/images/midwicket_banner.png",
-        "technologies": [
-            "Xamarin Forms",
-            "Azure AD B2C",
-            "MSAL",
-            "MVVM Light",
-            "ASP .NET Core 2",
-            "EF Core"
-        ],
-        "links": [
-            {
-                "type": "",
-                "name": "",
-                "url": ""
-            }
-        ],
-        "description": "<p>\r\n    Taking inspiration from a sporting podcast, I decided to learn some new skills by developing a dating app aimed at\r\n    fans of cricket.\r\n    There was a tight deadline imposed, as the podcast was hosting a live event within 2 months and I wanted to have a\r\n    release ready for this.\r\n</p>\r\n\r\n<p>\r\n    My aim was to build a Xamarin Forms app using the latest version of Forms and utilising the newly released Xamarin\r\n    Essentials; backed by an API running on ASP NET Core and using Azure AD B2C for user authentication.\r\n    I'd not had much experience in using EF with code-first migrations, so used this project as an opportunity to delve\r\n    into this further too.\r\n</p>\r\n\r\n<p>An MVP of the app using sample data was successfully built and ready release.\r\n    After discussions with the production team of the podcast however, we decided not to publish to the App store and\r\n    instead use the app in other ways.\r\n    Despite not releasing the app, I was really pleased with the project for the understanding I gained of Azure AD B2C\r\n    and ASP NET Core\r\n</p>\r\n\r\n<p>\r\n    View the source code:\r\n    <ul>\r\n        <li>Midwicket App - <a\r\n                href=\"https://github.com/adenearnshaw/tailenders-forms-app\">github.com/adenearnshaw/tailenders-forms-app</a>\r\n        </li>\r\n        <li>Midwicket API - <a\r\n                href=\"https://github.com/adenearnshaw/tailenders-api\">github.com/adenearnshaw/tailenders-api</a></li>\r\n    </ul>\r\n</p>",
-        "order": 2
+        "order": 1,
+        "is_hidden": false
     },
     {
         "id": "sainsburys-ssa",
@@ -73,7 +50,32 @@
             }
         ],
         "description": "<p>\r\n    SmartShop is a multi-million pound project undertaken by Sainsbury&apos;s to investigate and trial new technology to\r\n    improve the overall experience for customers shopping within their stores. During my time on the project, I was\r\n    tasked with building and developing software to be used in conjunction with dedicated scanner handsets in-store.\r\n</p>\r\n\r\n<p>\r\n    As part of the project, users were required to create an account and associate their loyalty card. The Registration\r\n    and Sign-In apps were initially built using Windows 8.1 UAP and later ported to Xamarin Forms when the hardware\r\n    requirements\r\n    were changed. During the development of the Sign-In app, I had to work closely with the Android dev team building\r\n    the scanner\r\n    handset software, as the devices needed to communicate with each other. Using MQTT, we were able to setup a channel\r\n    to allow data to be sent back and forth between the centralised sign-in tablets and the individual hand scanners.\r\n</p>\r\n\r\n<p>\r\n    Along with the Sign-In and Registration software, I also helped port a Windows Phone app, used by colleagues, to\r\n    Xamarin Forms after discovering the selected handsets had reliability issues. By using Portable Class Libraries and\r\n    a well-defined N-Tier architecture while building the original app, porting to Xamarin was a simple process with\r\n    only the UI layer and platform specific services requiring any work.\r\n</p>\r\n\r\n<p>\r\n    Since working on the project, there have been over 20 more stores where the handsets and tablets have been deployed\r\n    and the project has evolved further with the recent launch of a completely <a\r\n        href=\"https://www.bbc.co.uk/news/technology-45172631\" target=\"_blank\">till-free store</a>.\r\n</p>\r\n\r\n<p>\r\n    Official SmartShop home page\r\n    <ul>\r\n        <li><a\r\n                href=\"https://www.sainsburys.co.uk/shop/gb/groceries/get-ideas/our-freebies-and-competitions/our-freebies-and-competitions/smartshop-app\">Sainsbury&apos;s\r\n                Smartshop</a></li>\r\n    </ul>\r\n</p>",
-        "order": 3
+        "order": 2,
+        "is_hidden": false
+    },
+    {
+        "id": "acorn-taxi",
+        "name": "Taxi Insurance by Acorn",
+        "short_name": "Taxi Insurance",
+        "icon": "/assets/images/acorn_app.png",
+        "banner": "",
+        "technologies": [
+            "Xamarin Forms 2.5",
+            "Blink ID",
+            "Sage Pay",
+            "Azure DevOps",
+            "App Center"
+        ],
+        "links": [
+            {
+                "type": "",
+                "name": "",
+                "url": ""
+            }
+        ],
+        "description": "<p>\r\n    Designed to replace two legacy applications and combine the functionality into a single portal for buying both new policies and renewing existing ones, I was brought in with the majority of the basic functionality done. My role was to polish the application and make sure that it was ready for publication to the app store.\r\n</p>\r\n\r\n<p>\r\n    Since release, I've worked alongside the stakeholders to prioritise new features and improve base on user's feedback.\r\n</p>\r\n\r\n<p>\r\n    Download the app:\r\n    <ul>\r\n        <li>Android - <a href=\"https://play.google.com/store/apps/details?id=net.itdevelopers.acorn.onboarding.mobile\">Google Play Store</a>\r\n        </li>\r\n        <li>iOS - <a href=\"https://apps.apple.com/gb/app/taxi-insurance/id1437796356\">Apple App Store</a></li>\r\n    </ul>\r\n</p>",
+        "order": 4,
+        "is_hidden": false
     },
     {
         "id": "wbac-app",
@@ -97,7 +99,33 @@
             }
         ],
         "description": "<p>\r\n   The company identified they wanted to migrate their existing agency built Cordova app to a Xamarin Forms app built in-house. As the team had little knowledge in mobile development I was hired to lead the development of the app, educating and guiding the rest of the team in using Xamarin and architecting an enterprise level mobile app.\r\n</p>\r\n\r\n<p>\r\n    The decision to use Forms was already made, however the designs provided by the stakeholders included a highly customised UI. The majority of the styling was achieved using Custom Renderers, but a performance bottleneck on iOS when using the homescreen meant that the app uses a mix of both native layout using Storyboards and Forms layout using Xaml. \r\n</p>\r\n\r\n<p>\r\n    Build and Release pipelines were implemented using Azure Devops, with automatic deployment sending QA versions of the app to AppCenter for Automated and Manual testing. Once happy with the apps, the gated release pipeline could then push the apps to the stores ready for final sign-off and release.\r\n</p>\r\n\r\n<p>\r\n    Initially working with Xamarin Forms 2.3, a lot of custom code was needed to achieve the look and feel desired by the stakeholders. With the recent introduction of Xamarin Forms 4, there is scope to reduce this custom code and utilise the new Shell layout to make maintenance of the code much easier.\r\n</p>\r\n\r\n<p>\r\n    Download the app:\r\n    <ul>\r\n        <li>Android - <a href=\"https://play.google.com/store/apps/details?id=com.webuyanycar.quote&hl=en_GB\">Google Play Store</a>\r\n        </li>\r\n        <li>iOS - <a href=\"https://itunes.apple.com/gb/app/webuyanycar-com/id1078242954?mt=8\">Apple App Store</a></li>\r\n    </ul>\r\n</p>",
-        "order": 4
+        "order": 3,
+        "is_hidden": false
+    },
+    {
+        "id": "a10w-midwicket",
+        "name": "Midwicket Application",
+        "short_name": "MidWicket",
+        "icon": "/assets/images/midwicket_app.png",
+        "banner": "/assets/images/midwicket_banner.png",
+        "technologies": [
+            "Xamarin Forms",
+            "Azure AD B2C",
+            "MSAL",
+            "MVVM Light",
+            "ASP .NET Core 2",
+            "EF Core"
+        ],
+        "links": [
+            {
+                "type": "",
+                "name": "",
+                "url": ""
+            }
+        ],
+        "description": "<p>\r\n    Taking inspiration from a sporting podcast, I decided to learn some new skills by developing a dating app aimed at\r\n    fans of cricket.\r\n    There was a tight deadline imposed, as the podcast was hosting a live event within 2 months and I wanted to have a\r\n    release ready for this.\r\n</p>\r\n\r\n<p>\r\n    My aim was to build a Xamarin Forms app using the latest version of Forms and utilising the newly released Xamarin\r\n    Essentials; backed by an API running on ASP NET Core and using Azure AD B2C for user authentication.\r\n    I'd not had much experience in using EF with code-first migrations, so used this project as an opportunity to delve\r\n    into this further too.\r\n</p>\r\n\r\n<p>An MVP of the app using sample data was successfully built and ready release.\r\n    After discussions with the production team of the podcast however, we decided not to publish to the App store and\r\n    instead use the app in other ways.\r\n    Despite not releasing the app, I was really pleased with the project for the understanding I gained of Azure AD B2C\r\n    and ASP NET Core\r\n</p>\r\n\r\n<p>\r\n    View the source code:\r\n    <ul>\r\n        <li>Midwicket App - <a\r\n                href=\"https://github.com/adenearnshaw/tailenders-forms-app\">github.com/adenearnshaw/tailenders-forms-app</a>\r\n        </li>\r\n        <li>Midwicket API - <a\r\n                href=\"https://github.com/adenearnshaw/tailenders-api\">github.com/adenearnshaw/tailenders-api</a></li>\r\n    </ul>\r\n</p>",
+        "order": 5,
+        "is_hidden": false
     },
     {
         "id": "dc-citizenapp",
@@ -120,7 +148,8 @@
             }
         ],
         "description": "<p>\r\n    The Citizen App from Democracy Counts was imagined to be a white label solution provided to local authorities to be used by households within their administrative region. \r\n    The requirements for the app included the ability for electors to register themselves to vote; change their personal details; confirm all the members of their household; view local representative; communicate with their local authority and receive notifications back. \r\n</p>\r\n\r\n<p>\r\n    Embarking into a new sector, I had very little knowledge of the internal workings of managing the electorate, but with a deadline of 3 weeks to produce a working prototype for an annual trade show, I had my hands full.\r\n</p>\r\n\r\n<p>\r\n    During that time I learnt how councils manage enrollment on the electoral register and what's required of local councils in order for them to lawfully carry out their duties as election officials. \r\n    Working alone, I had to design and build the app from scratch, ensuring the features required were introduced quickly, but in such a way that the code would be resiliant too.\r\n</p>\r\n\r\n<p>\r\n    I decided to use Xamarin Native as the primary technology stack, as there was a desire to highly customise the look and feel of the UI, while keeping startup speed paramount. \r\n    Using a multi-tiered approach, I built the project with separate Logic & UI layers, concentrating on building up a prototype on Android first, with a view to building the iOS UI at a later date. \r\n    Despite only spending a couple of months on the project, I was really pleased with app infrastructure I established, and received positive feedback from other devs who took over the piece.\r\n</p>\r\n\r\n<p>\r\n    View the product page here: <a href=\"https://www.democracycounts.co.uk/citizens-portal\">democracycounts.co.uk/citizens-portal</a>\r\n</p>\r\n",
-        "order": 5
+        "order": 6,
+        "is_hidden": false
     },
     {
         "id": "sainsburys-eod",
@@ -140,6 +169,7 @@
             }
         ],
         "description": "<p>\r\n        Sainsbury&apos;s Entertainment on Demand offering was a suite of apps which were some of Sainsbury&apos;s earliest forays into providing digital services to its customers. \r\n        The suite included apps for browsing digital magazines, browsing &amp; purchasing music, renting &amp; watching movies and an eBook reader. \r\n        All apps were available on iOS &amp; Android, with the Movies and eBooks apps also available on Windows Phone 8 and Windows 8 through a Win UAP app for each.\r\n    </p>\r\n    \r\n    <p>\r\n        Both the Movies and eBooks apps were architected with a similar approach. As was recommended, the apps followed an MVVM pattern to try and maximise code reuse. \r\n        At their core was shared Portable Class Library which housed code common to both apps, providing helper classes, authorization & authentication providers and other \r\n        structural code that could be used throughout both apps. \r\n        Each product then had its own PCL which housed logic specific to the functionality of each app, such as how to handle video streams and buffers; how to parse various eBook formats,\r\n        and provide ViewModels to expose data. \r\n        By working in this way, my team could share as much code as possible, only having to diverge at the frontend where UI framework APIs differed between WP8 & Win8. With Microsoft releasing \r\n        Windows 8.1 for both desktop & phone and introducing Shared Projects, we were even able to consolodate the UI code.\r\n    </p>\r\n    \r\n    <p>\r\n        As interest waned in the Entertainment on Demand products, more of my time was diverted to the <a href=\"/projects/sainsburys-ssa\">SmartShop project</a>. With the stability of the \r\n        shared code from the EoD apps, I was able to quickly build MVP apps to help support the project's progress.\r\n    </p>",
-        "order": 6
+        "order": 7,
+        "is_hidden": true
     }
 ]
