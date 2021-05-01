@@ -7,8 +7,6 @@ import { Component } from '@angular/core';
 })
 export class PrintButtonComponent {
 
-    public constructor() { }
-
     public printWindow(): void {
         if (window) {
             window.print();

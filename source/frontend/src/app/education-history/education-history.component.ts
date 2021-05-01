@@ -5,11 +5,5 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './education-history.component.html',
   styleUrls: ['./education-history.component.scss']
 })
-export class EducationHistoryComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class EducationHistoryComponent {
 }

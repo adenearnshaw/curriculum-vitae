@@ -5,11 +5,5 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './career-objectives.component.html',
   styleUrls: ['./career-objectives.component.scss']
 })
-export class CareerObjectivesComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class CareerObjectivesComponent{
 }
