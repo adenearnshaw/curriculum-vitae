@@ -1,7 +1,7 @@
 [build]
   publish = "dist/cv"
   # command = "ng build --prod"
-  command = "CI= npm run build"
+  command = "CI= npm run build:prod"
 [[redirects]]
   from = "/*"
   to = "/index.html"
