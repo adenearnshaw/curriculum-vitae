@@ -1,5 +1,5 @@
 [build]
-  publish = "/opt/build/repo/dist/cv"
+  publish = "source/frontend/dist/cv"
   # command = "ng build --prod"
   command = "CI= npm run build:prod"
 [[redirects]]
