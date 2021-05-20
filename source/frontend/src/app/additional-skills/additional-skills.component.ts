@@ -2,14 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'cv-additional-skills',
-  templateUrl: './additional-skills.component.html',
-  styleUrls: ['./additional-skills.component.scss']
+  templateUrl: './additional-skills.component.html'
 })
-export class AdditionalSkillsComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class AdditionalSkillsComponent {
 }
