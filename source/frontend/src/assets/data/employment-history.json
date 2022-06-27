@@ -1,11 +1,28 @@
 [
     {
+        "id": "psl",
+        "date": "Nov 2020 - Present",
+        "employer": "Positive Solutions Ltd",
+        "position": "Lead Mobile Developer (IC)",
+        "overview": "Responsible for the maintenance of current applications and the design and development of new mobile apps; Providing technical guidance to both onshore and offshore teams to help maintain consistent standards between remote teams; Architecting and maintaining bespoke OIDC Authentication & Authorisation platform based on IdentityServer.",
+        "details": "Responsible for the maintenance of current applications and the design and development of new mobile apps. I provide technical guidance to both onshore and offshore teams to help ensure consistency between remote teams and keep standards and practices aligned and drive forward the desire to produce maintainable software without sacrificing output.<br/><br/>Alongside my mobile work, I designed and built a bespoke  authentication & authorisation system backed by IdentityServer to enable the company’s future software products to share a Single Sign On OIDC login, and provide secure communication between services in the backend infrastructure.",
+        "skills": [
+            ".NET MAUI",
+            "Xamarin Forms",
+            "Android with Java",
+            "Identity Server 4",
+            "EF Code First",
+            "Mass Transit",
+            "Source Generators"
+        ]
+    },
+    {
         "id": "itd",
-        "date": "Sep 2019 - Present",
+        "date": "Sep 2019 - Nov 2020",
         "employer": "IT Developers Ltd",
         "position": "Senior Mobile Developer",
         "overview": "With my experience of architecting and releasing consumer facing apps to market, I was brought on board to complete and ship a new Taxi Insurance app for IT Developers' sister company Acorn Insurance. The app was close to its initial release, but still needed some fine tuning and work with senior stakeholders to reach approval for release.",
-        "details": "With my experience of architecting and releasing consumer facing apps to market, I was brought on board to complete and ship a new Taxi Insurance app for IT Developers' sister company Acorn Insurance. The app was close to its initial release, but still needed some fine tuning and work with senior stakeholders to reach approval for release.<br/><br/>Since then, I have helped steer the development team's transition to more modern practices, introducing a more systematic approach to development using tools such as Azure Devops to formally document requirements; working with stakeholders to prioritise new features; starting daily Standups and Sprint Reviews; introducing Peer Reviews and Pair Programming to improve the quality of work; and helping build CI/CD pipelines to automate builds and deployments.",
+        "details": "With my experience of architecting and releasing consumer facing apps to market, I was brought on board to complete and ship a new Taxi Insurance app for IT Developers' sister company Acorn Insurance. The app was close to its initial release, but still needed some fine tuning and work with senior stakeholders to reach approval for release.<br/><br/>I helped steer the development team's transition to more modern practices, introducing a more systematic approach to development using tools such as Azure Devops to formally document requirements; working with stakeholders to prioritise new features based on business value; starting daily Standups and Sprint Reviews; introducing Peer Reviews and Pair Programming to improve the quality of work; and helping build CI/CD pipelines to automate builds and deployments.",
         "skills": [
             "Xamarin Forms 4.8",
             "Localisation Support",
@@ -50,6 +67,7 @@
         "position": "Mobile Developer",
         "overview": "Brought into the company as their only mobile developer, it was my responsibility to design and build a proof-of-concept application designed for electors to manage their registrations on the Electoral Roll.",
         "details": "Brought into the company as their only mobile developer, it was my responsibility to design and build a proof-of-concept application designed for electors to manage their registrations on the Electoral Roll. I was under a little pressure from the start, as a rough version of the app was required within 6 weeks of starting for demonstration at an annual tradeshow. <br/><br/> Building the application in Xamarin Android with a Portable Class Library (PCL) allowed me to quickly iterate and provide a working demo with push notifications in time for the opening day.\r\n\r\nUsing a PCL with MVVM architecture allowed us to quickly build out the iOS version of the application too, as only the UI needed to be implemented.<br/><br/>Despite being provided full automony over the product, the role was 100% remote, with the other members of the team on the other side of the country. I found the isolation to be too much and decided, a role which was a little more office based was more suited to me.",
+        "isOmittedInPrint": true,
         "skills": [
             "Xamarin Native",
             "Mvvm Light",
