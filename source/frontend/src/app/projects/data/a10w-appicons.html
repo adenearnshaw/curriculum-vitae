@@ -1,0 +1,23 @@
+<p>
+    App Actions allow developers to add shortcuts to an app&apos;s launch icon to invoke custom functionality or deep link into the app, essentially, extra ways of starting your app. .NET MAUI has support for App Actions across iOS/Android/Windows. A simple API is provided that allows developers to declare App Actions, with a spot for custom title and subtitle and to set an icon for the action from the app&apos;s resources.
+</p>
+
+<p>The only problem is creating/setting icons for App Actions can be quite tricky, requiring adherence to strict specifications across platforms. AppActions.Icons.Maui is a NuGet package developers can install that provides a set of common icons for use in Android/iOS/Windows, to quickly add icons to App Actions with little ceremony.</p>
+
+<p>
+    With Xamarin Essentials effectively <a href="https://www.howtogeek.com/297651/what-does-it-mean-when-a-company-sherlocks-an-app/">Sherlocking</a> my <a href="/projects/a10w-shortcuts">AppShortcuts Plugin</a>, when it came to porting my work to .NET MAUI, I decided that offering a competing API wouldn't provide as much benefit or adoption. Instead, I chose to look for a way to extend the MAUI Essentials App Actions API and still provide the Icons the original Plugin was known for.
+</p>
+
+<p>
+    After delving through the MAUI source code, I was able to understand the capabilities and limitations of the framework's implementation. Paired with a refresher course of Android & iOS native APIs, I was able to build a plugin that could provide users with a default set of 29 icons that could be used without any additional design work. Futher benefits included the ability to take advantage of iOS' new SF Symbols and provide an system that allows developers to use this extended symbol set on iOS platforms whilst reverting to Provided or Custom icons for other platforms.
+</p>
+
+<p>
+    View the source code:
+    <ul>
+        <li>AppActions.Icons.Maui GitHub - <a href="https://github.com/adenearnshaw/AppActions.Icons.Maui">github.com/adenearnshaw/AppActions.Icons.Maui</a>
+        </li>
+        <li>AppActions.Icons.Maui Nuget - <a href="https://www.nuget.org/packages/AppActions.Icons.Maui/">nuget.org/packages/AppActions.Icons.Maui</a>
+        </li>
+    </ul>
+</p>

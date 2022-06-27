@@ -1,5 +1,28 @@
 [
     {
+        "id": "a10w-appicons",
+        "name": "App Action Icons for .NET MAUI",
+        "short_name": "AppActions.Icons.Maui",
+        "icon": "/assets/images/actionicons_plugin.png",
+        "banner": "/assets/images/actionicons_banner.png",
+        "technologies": [
+            ".NET 6 iOS",
+            ".NET 6 Android",
+            "WinUI 3",
+            ".NET MAUI"
+        ],
+        "links": [
+            {
+                "type": "",
+                "name": "",
+                "url": ""
+            }
+        ],
+        "description": "<p>\r\n    App Actions allow developers to add shortcuts to an app’s launch icon to invoke custom functionality or deep link into the app—essentially, extra ways of starting your app. .NET MAUI has support for App Actions across iOS/Android/Windows—the IAppActions interface is exposed through the AppActions.Current property, and is available in the Microsoft.Maui.ApplicationModel namespace. A simple API is provided that allows developers to declare App Actions—with a spot for custom title and subtitle and to set an icon for the action from the app&apos;s resources.\r\n</p>\r\n\r\n<p>\r\n    With Xamarin Essentials effectively <a href=\"https://www.howtogeek.com/297651/what-does-it-mean-when-a-company-sherlocks-an-app/\">Sherlocking</a> my <a href=\"/projects/a10w-shortcuts\">AppShortcuts Plugin</a>, when it came to porting my work to .NET MAUI, I decided that offering a competing API wouldn't provide as much benefit or adoption. Instead, I chose to look for a way to extend the MAUI Essentials App Actions API and still provide the Icons the original Plugin was known for.\r\n</p>\r\n\r\n<p>\r\n    After delving through the MAUI source code, I was able to understand the capabilities and limitations of the framework's implementation. Paired with a refresher course of Android & iOS native APIs, I was able to build a plugin that could provide users with a default set of 29 icons that could be used without any additional design work. Futher benefits included the ability to take advantage of iOS' new SF Symbols and provide an system that allows developers to use this extended symbol set on iOS platforms whilst reverting to Provided or Custom icons for other platforms.\r\n</p>\r\n\r\n<p>\r\n    View the source code:\r\n    <ul>\r\n        <li>AppActions.Icons.Maui GitHub - <a href=\"https://github.com/adenearnshaw/AppActions.Icons.Maui\">github.com/adenearnshaw/AppActions.Icons.Maui</a>\r\n        </li>\r\n        <li>AppActions.Icons.Maui Nuget - <a href=\"https://www.nuget.org/packages/AppActions.Icons.Maui/\">nuget.org/packages/AppActions.Icons.Maui</a>\r\n        </li>\r\n    </ul>\r\n</p>",
+        "order": 1,
+        "is_hidden": false
+    },
+    {
         "id": "a10w-shortcuts",
         "name": "AppShortcuts Plugin for Xamarin and Windows",
         "short_name": "AppShortcuts Plugin",
@@ -20,7 +43,7 @@
         ],
         "description": "<p>\r\n    As developers, it's important to make user's lifes as easy as possible. Adding quick actions into our apps enhances\r\n    the UX and can provide additional value for users. Many browser apps such as Chrome, Edge & Safari have\r\n    shortcuts to open a new incognito tab and the Shazam app includes the ability to initiate a search straight from the\r\n    home screen, saving crucial seconds when you're trying to identify that snippet of a song.\r\n</p>\r\n\r\n<p>\r\n    After trying to find a Plugin that would allow me to add shortcuts into my app and falling short, I decided to build\r\n    my own open source library and provide the functionality for others to use.\r\n</p>\r\n\r\n<p>\r\n    The plugin provides developers with the ability to add shortcuts to their Xamarin Android, Xamarin iOS & native UWP apps,\r\n    or within a Xamarin Forms app that implements 1 or more of the platforms. As part of the native implementation, iOS \r\n    provides a number of native icons that can be assigned as part of the icon creation. In order to provide parity between \r\n    platform's APIs, the plugin ships with a matching set of icons for both Android & UWP which were put together by myself,\r\n    ensuring the Plugin is as rich as possible.\r\n</p>\r\n\r\n<p>\r\n    Following samples provided by James Montemagno, the original version was architected using a shared project and conditional \r\n    compilation. Maintaining the plugin across three platforms with so many projects all sharing parts of the code-base was quite\r\n    a challenge. With the introduction of .Net Standard 2.0 support in Xamarin Forms, I decided to refactor the project to use a \r\n    multi-targeted platform approach, which simplified the project structure and makes maintenance much easier.\r\n</p>\r\n\r\n<p>\r\n    View the source code:\r\n    <ul>\r\n        <li>AppShortcutsPlugin GitHub - <a href=\"https://github.com/adenearnshaw/AppShortcutsPlugin\">github.com/adenearnshaw/AppShortcutsPlugin</a>\r\n        </li>\r\n        <li>AppShortcutsPlugin Nuget - <a href=\"https://www.nuget.org/packages/Plugin.AppShortcuts\">nuget.org/packages/Plugin.AppShortcuts</a>\r\n        </li>\r\n    </ul>\r\n</p>",
         "order": 1,
-        "is_hidden": false
+        "is_hidden": true
     },
     {
         "id": "acorn-taxi",
