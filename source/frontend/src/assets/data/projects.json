@@ -46,6 +46,29 @@
         "is_hidden": true
     },
     {
+        "id": "psl-quickpick",
+        "name": "Analyst Quicpick",
+        "short_name": "Quickpick",
+        "icon": "/assets/images/quickpick_app.png",
+        "banner": "",
+        "technologies": [
+            "Android",
+            "Java",
+            "TCP Sockets",
+            "Barcode & Datamatrix handling"
+        ],
+        "links": [
+            {
+                "type": "",
+                "name": "",
+                "url": ""
+            }
+        ],
+        "description": "",
+        "order": 1,
+        "is_hidden": false
+    },
+    {
         "id": "acorn-taxi",
         "name": "Taxi Insurance by Acorn",
         "short_name": "Taxi Insurance",
@@ -66,7 +89,7 @@
             }
         ],
         "description": "<p>\r\n    Designed to replace two legacy applications and combine the functionality into a single portal for buying both new policies and renewing existing ones, I was brought in with the majority of the basic functionality done. My role was to polish the application and make sure that it was ready for publication to the app store.\r\n</p>\r\n\r\n<p>\r\n    Since release, I've worked alongside the stakeholders to prioritise new features and improve base on user's feedback.\r\n</p>\r\n\r\n<p>\r\n    Download the app:\r\n    <ul>\r\n        <li>Android - <a href=\"https://play.google.com/store/apps/details?id=net.itdevelopers.acorn.onboarding.mobile\">Google Play Store</a>\r\n        </li>\r\n        <li>iOS - <a href=\"https://apps.apple.com/gb/app/taxi-insurance/id1437796356\">Apple App Store</a></li>\r\n    </ul>\r\n</p>",
-        "order": 2,
+        "order": 3,
         "is_hidden": false
     },
     {
@@ -92,7 +115,7 @@
         ],
         "description": "<p>\r\n    With the original site running a hybrid of ASP MVC and AngularJS with a high degree of latency, the decision was made to migrate to an Angular site with a fresh design.\r\n</p>\r\n\r\n<p>\r\n    In order to test the functionality, the site was initially styled identically to the old site so A/B tests could be performed. Once the stakeholder were happy, it was my responsibility to apply the redesign.\r\n</p>\r\n\r\n<p>\r\n    With the thought of maintainability in mind, I built up a Bootstrap-based framework to provide the responsive layout familiar to many, whilst providing custom components for all inputs, informed by the UI designs provided. The app was built mobile-first, but I extended this to both tablet and desktop form factors ensuring an appropriate layout and UX for any device.\r\n</p>\r\n\r\n<p>\r\n    This project really pushed my CSS knowledge to the limit. Constrained by requirements to make sure the app worked on a large range of browsers and devices, along with making sure the UI was smooth for the users via animations and transitions, this was a great challenge.\r\n</p>\r\n\r\n<p>\r\n    Browse the site: <a href=\"https://www.webuyanycar.com\">WeBuyAnyCar.com</a>\r\n</p>",
         "order": 3,
-        "is_hidden": false
+        "is_hidden": true
     },
     {
         "id": "wbac-app",
