@@ -99,19 +99,19 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "cv:build",
-                        "port": 4209
+                      "port": 4209,
+                        "buildTarget": "cv:build"
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "cv:build:production"
+                          "buildTarget": "cv:build:production"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "cv:build"
+                      "buildTarget": "cv:build"
                     }
                 }
             }
