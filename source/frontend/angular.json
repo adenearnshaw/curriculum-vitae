@@ -135,7 +135,6 @@
       }
     }
   },
-  "defaultProject": "cv",
   "cli": {
     "analytics": false
   }
