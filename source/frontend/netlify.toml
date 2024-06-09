@@ -1,8 +1,8 @@
 [build]
-  publish = "source/frontend/dist/cv"
-  # command = "ng build --prod"
-  command = "CI= npm run build:prod"
+publish = "source/frontend/dist/cv/browser"
+# command = "ng build --prod"
+command = "CI= npm run build:prod"
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+from = "/*"
+to = "/index.html"
+status = 200
