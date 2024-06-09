@@ -39,11 +39,11 @@
                     "options": {
                         "aot": true,
                         "outputPath": {
-                            "base": "dist/cv/browser"
+                          "base": "dist/cv"
                         },
                         "index": "src/index.html",
                         "polyfills": [
-                            "src/polyfills.ts"
+                          "src/polyfills.ts"
                         ],
                         "stylePreprocessorOptions": {
                             "includePaths": [
@@ -100,19 +100,19 @@
                 "serve": {
                     "builder": "@angular/build:dev-server",
                     "options": {
-                        "port": 4209,
+                      "port": 4209,
                         "buildTarget": "cv:build"
                     },
                     "configurations": {
                         "production": {
-                            "buildTarget": "cv:build:production"
+                          "buildTarget": "cv:build:production"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular/build:extract-i18n",
                     "options": {
-                        "buildTarget": "cv:build"
+                      "buildTarget": "cv:build"
                     }
                 }
             }
