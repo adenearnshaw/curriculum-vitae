@@ -4,16 +4,18 @@
         "date": "Nov 2020 - Present",
         "employer": "Positive Solutions Ltd",
         "position": "Lead Mobile Developer (IC)",
-        "overview": "Responsible for the maintenance of current applications and the design and development of new mobile apps; Providing technical guidance to both onshore and offshore teams to help maintain consistent standards between remote teams; Architecting and maintaining bespoke OIDC Authentication & Authorisation platform based on IdentityServer.",
-        "details": "Responsible for the maintenance of current applications and the design and development of new mobile apps. I provide technical guidance to both onshore and offshore teams to help ensure consistency between remote teams and keep standards and practices aligned and drive forward the desire to produce maintainable software without sacrificing output.<br/><br/>Alongside my mobile work, I designed and built a bespoke  authentication & authorisation system backed by IdentityServer to enable the company’s future software products to share a Single Sign On OIDC login, and provide secure communication between services in the backend infrastructure.",
+        "overview": "Responsible for the maintenance of current applications and the design and development of new cross-platform &amp; native mobile apps; Providing technical guidance to both onshore and offshore teams to help maintain consistent standards between remote teams; Architecting and maintaining bespoke OIDC Authentication & Authorisation platform based on IdentityServer.",
+        "details": "Responsible for the maintenance of current applications and the design and development of new cross-platform &amp; native mobile apps. I provide technical guidance to both onshore and offshore teams to help ensure consistency between remote teams and keep standards and practices aligned and drive forward the desire to produce maintainable software without sacrificing output.<br/><br/>Alongside my mobile work, I designed and built a bespoke authentication & authorisation system backed by IdentityServer to enable the company’s future software products to share a Single-Sign-On OIDC login, and provide secure communication between services in the backend infrastructure, whilst being extensible with 3rd-party identity providers such as the NHS and Microsoft.",
         "skills": [
             ".NET MAUI",
             "Xamarin Forms",
-            "Android with Java",
-            "Identity Server 4",
+            "Android with Java/Kotlin",
+            "WPF / WinUI 3",
+            "Duende Identity Server 7",
             "EF Code First",
             "Mass Transit",
-            "Source Generators"
+            "Source Generators",
+            "PostgreSQL"
         ]
     },
     {

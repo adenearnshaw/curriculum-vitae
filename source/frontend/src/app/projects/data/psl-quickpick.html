@@ -1,15 +1,29 @@
 <p>
-    Quickpick is a fully native Java Android app designed to work on devices with built in scanners to improve the picking accuracy of pharmacies when fulfilling patient's prescriptions.
+    Quickpick is a fully native Java & Kotlin Android app designed to work on both devices with built in scanners and
+    regular devices with cameras to improve the picking accuracy of pharmacies when fulfilling patient's prescriptions.
 </p>
 
 <p>
-    The app helps improve accuracy by allowing pickers to select digital prescriptions or scan physical ones and curates an optimised list of the drugs that need to be fulfilled. Pickers fulfil the items on the list by scanning either the 1D or 2D barcodes on each drug pack which then validating if the drug scanned is the correct product, dose and quantity. The app provides audio and visual cues for each product and allows pickers to confidently pack each prescription with greater speed. 
+    The app helps improve accuracy by allowing pickers to select digital prescriptions or scan physical ones and curates
+    an optimised list of the drugs that need to be fulfilled. Pickers fulfil the items on the list by scanning either
+    the 1D or 2D barcodes on each drug pack which then validating if the drug scanned is the correct product, dose and
+    quantity. The app provides audio, haptic and visual cues for each product and allows pickers to confidently pack
+    each prescription with greater speed.
 </p>
 
 <p>
-    This was one of the first enterprise level products I've worked on in Java, Despite wishing I was able to utilise some of the code features found in other languages (async/await for example), I was able to put my experience with Xamarin Native Android to good use and have been the sole maintainer whilst it goes through Pilot phases and Clinical Approval.
+    I adopted this project when it was about 75% complete towards an initial release. The app architecture had been
+    copied from a legacy application that was heavily Activity-based with no real modern features like Fragments,
+    Navigation Graph or Unit Tests. With the aim to get the product into a pilot phase as soon as possible, I
+    prioritised functionality over the tech-debt, taking chunks out of that during further development phases as part of
+    process of improving stability and maintainability.
+</p>
+<p>
+    Currently the app runs a hybrid of both Java & Kotlin and whilst mostly still Layout-based, some Jetpack Compose
+    views have been introduced as the number of devices the app targets increases.
 </p>
 
 <p>
-    View the project page here: <a href="https://www.positive-solutions.co.uk/our-systems/quickpickapp/" >Analyst Quickpick</a>
+    View the project page here: <a href="https://www.positive-solutions.co.uk/our-systems/quickpickapp/">Analyst
+        Quickpick</a>
 </p>
