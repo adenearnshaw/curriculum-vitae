@@ -2,7 +2,7 @@
     {
         "id": "a10w-appicons",
         "name": "App Action Icons for .NET MAUI",
-        "short_name": "AppActions.Icons.Maui",
+        "short_name": "Maui AppActions",
         "icon": "/assets/images/actionicons_plugin.png",
         "banner": "/assets/images/actionicons_banner.png",
         "technologies": [
